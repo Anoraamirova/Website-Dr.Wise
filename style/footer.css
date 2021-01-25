@@ -1,0 +1,252 @@
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  height: fit-content;
+  background: #f9f9f9;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: auto 45% auto;
+  grid-template-rows: auto;
+  justify-content: space-around;
+  padding-top: 2%;
+  padding-bottom: 20px;
+}
+
+.footer-container ul {
+  margin-top: 1%;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  font-family: Geometria;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 38px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+footer ul li a:hover {
+  color: #ff6969;
+}
+
+footer ul li:nth-child(1) {
+  list-style-type: n;
+  font-family: Geometria;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 55px;
+  color: #3b3b3b;
+}
+
+.make-text-red {
+  color: #ff6969;
+  text-decoration: underline;
+}
+
+.footer-buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-top: 10%;
+}
+
+.footer-buttons > a {
+  background: #000000;
+  box-shadow: 0px 15px 35px rgba(185, 185, 185, 0.25);
+  border-radius: 50px;
+  border: none;
+
+  height: 59px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo i {
+  color: #ffffff;
+  width: 50.06px;
+  height: 50.06px;
+  box-shadow: 0px 10px 15px rgba(51, 88, 176, 0.25);
+  border-radius: 500px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 30%;
+  font-size: 20px;
+}
+
+.fa-facebook-f {
+  background: #4b69b1;
+}
+
+.fa-instagram {
+  background: #bb3b7c;
+}
+
+.fa-twitter {
+  background: #1da1f2;
+}
+
+.fa-youtube {
+  background: #e53935;
+}
+
+.fa-facebook-f:hover {
+  border: 1px #4b69b1 solid;
+  color: #4b69b1;
+}
+
+.fa-instagram:hover {
+  border: 1px #bb3b7c solid;
+  color: #bb3b7c;
+}
+
+.fa-twitter:hover {
+  border: 1px #1da1f2 solid;
+  color: #1da1f2;
+}
+
+.fa-youtube:hover {
+  border: 1px #e53935 solid;
+  color: #e53935;
+}
+
+i:hover {
+  background: #ffffff;
+}
+
+.footer-logo {
+  position: relative;
+}
+
+.footer-logo-title {
+  top: 35%;
+  left: 81px;
+  width: fit-content;
+  position: absolute;
+  font-family: Geometria;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 55px;
+  color: #000;
+}
+
+.footer-logo > img {
+  box-sizing: border-box;
+  margin-top: 8%;
+  margin-bottom: 10%;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 7%;
+  box-sizing: border-box;
+}
+
+.footer-lists {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1400px) {
+  .footer-container {
+    grid-template-columns: 30% 68%;
+    grid-template-rows: auto auto;
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  footer {
+    padding-bottom: 50px;
+  }
+
+  .footer-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    justify-content: start;
+    margin-left: 10px;
+  }
+
+  .footer-logo > img {
+    margin-bottom: 30px;
+  }
+
+  .footer-logo {
+    margin-top: 50px;
+  }
+
+  .footer-logo-title {
+    left: 73px;
+    top: 30px;
+  }
+
+  .footer-lists {
+    margin-top: 35px;
+    justify-content: space-evenly;
+  }
+
+  .footer-logo > img {
+    height: 60px;
+    margin-top: 0 !important;
+  }
+
+  .footer-lists > ul {
+    padding-left: 0;
+    max-width: fit-content;
+  }
+
+  .footer-buttons {
+    padding-top: 30px;
+  }
+
+  .footer-social-icons {
+    gap: 3%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer-lists {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-container {
+    justify-content: center;
+  }
+
+  .footer-social-icons {
+    gap: 3%;
+  }
+
+  .footer-lists > ul {
+    padding-left: 0;
+    max-width: 145px;
+  }
+
+  .mob-list {
+    max-width: fit-content !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer-social-icons {
+    gap: 3%;
+  }
+
+  .footer-lists > ul {
+    padding-left: 0;
+  }
+}

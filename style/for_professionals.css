@@ -1,0 +1,471 @@
+.for_professionals {
+    margin-bottom: 120px;
+}
+
+.for_professionals .banner_prof {
+    display: flex;
+    margin-top: 11%;
+    justify-content: center;
+}
+
+.for_professionals .banner_prof .block_title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.for_professionals .block_title h1 {
+    font-size: 70px;
+    line-height: 95px;
+    white-space: normal;
+    font-weight: 500;
+    max-width: 695px;
+    text-align: left;
+}
+
+
+.for_professionals .right-poster-hand {
+    background: #F9F9F9;
+    border-radius: 500px 0px 0px 500px;
+    float: right;
+    margin-top: -25;
+    margin-right: -2.5%;
+}
+
+.for_professionals .right-poster-hand img {
+    max-height: 995px;
+    margin-top: -20%;
+}
+
+.for_professionals .sign_btn {
+    width: 215px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF6969;
+    border-radius: 50px 0px 30px 50px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.prof-row {
+    display: flex;
+    margin-top: 95px;
+    align-items: center;
+}
+
+.prof-row .poster-left {
+    background: #F9F9F9;
+    width: 50%;
+    MARGIN-LEFT: -2.5%;
+    display: flex;
+    border-radius: 0px 500px 500px 0px;
+}
+
+.prof-row .poster-left img {
+    margin: -10% auto;
+}
+
+.prof-row .prof-half-txt {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 55px;
+    color: #515151;
+    max-width: 684px;
+    margin-left: 70px;
+}
+
+.for_professionals .row {
+    margin-top: 230px;
+}
+
+.for_professionals .benefits-card {
+    justify-content: space-evenly;
+}
+
+.tm_items {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mobile-cols {
+    display: flex;
+}
+
+.item {
+    background: #F9F9F9;
+    height: 170px;
+    width: 246px;
+    border-radius: 80px 150px 150px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.second {
+    border-radius: 0px 150px 150px 80px;
+}
+
+.third {
+    border-radius: 150px 100px 0px 150px;
+}
+
+.fourth {
+    border-radius: 150px 0px 100px 150px;
+}
+
+.sixth {}
+
+.item_icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: #E5F3FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 13px;
+    text-align: center;
+    color: #515151;
+}
+
+.double-poster-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.double-poster-row .left-card {
+    border-radius: 0px 500px 500px 0px;
+    background: #F9F9F9;
+    padding: 7% 0%;
+    width: 50%;
+    display: flex;
+    margin-left: -2.5%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.double-poster-row .right-card {
+    border-radius: 500px 0px 0px 500px;
+    background: #F9F9F9;
+    padding: 5% 0%;
+    width: 50%;
+    display: flex;
+    margin-right: -2.5%;
+    margin-top: 120px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.double-poster-row .left-card .card-content {
+    text-align: left;
+}
+
+.double-poster-row .left-card .card-txt,
+.double-poster-row .right-card .card-txt {
+    font-weight: 500;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    max-width: 610px;
+    margin-top: 20px;
+}
+
+.join-team-block {
+    width: 95%;
+    margin-left: -2.5%;
+    margin-top: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 45px rgba(185, 185, 185, 0.25);
+    border-radius: 0px 500px 500px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.join-team-block .left-part {
+    text-align: left;
+
+    padding-left: 7% !important;
+}
+
+.join-team-block .left-part .title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 65px;
+    max-width: 657px;
+    color: #3B3B3B;
+    margin-bottom: 50px;
+}
+
+.join-team-block .left-part p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 800px;
+    color: #515151;
+    margin-bottom: 15px;
+}
+
+.join-team-block .right-part img {
+    margin: -10% auto;
+    max-height: 600px;
+}
+
+.list-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 800px;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.list-row .bullet-list {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding-left: 13px;
+    color: #515151;
+}
+
+.left-part .sign_btn {
+    margin-top: 15px;
+}
+
+.mobile-mockup {
+    display: none;
+}
+
+@media screen and (max-width:1600px) {
+    .for_professionals .block_title h1 {
+        font-size: 50px;
+        line-height: 68px;
+    }
+
+    .for_professionals .right-poster-hand img {
+        max-height: 600px;
+    }
+
+    .prof-row .poster-left img {
+        max-height: 600px;
+    }
+
+    .prof-row .prof-half-txt {
+        font-size: 24px;
+        line-height: 40px;
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    .double-poster-row .card-content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .for_professionals .right-poster-hand img {
+        max-height: 400px;
+    }
+
+    .prof-row .prof-half-txt {
+        max-width: 400px;
+    }
+
+    .item {
+        height: 115px;
+        width: 140px;
+    }
+
+    .item .item_icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .item .item-icon img {
+        height: 30px;
+    }
+
+    .double-poster-row {
+        flex-direction: column;
+        align-items: baseline;
+        margin-top: 60px;
+    }
+
+    .double-poster-row .right-card {
+        width: 100%;
+        margin-left: 3%;
+        margin-top: 30px;
+        border-radius: 50px 0px 0px 50px;
+    }
+
+    .double-poster-row .left-card {
+        width: 100%;
+        margin-left: -3%;
+        border-radius: 0px 50px 50px 0px;
+    }
+
+    .double-poster-row .left-card .card-txt,
+    .double-poster-row .right-card .card-txt {
+        margin-top: 10px;
+        max-width: -webkit-fill-available;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .for_professionals .banner_prof {
+        flex-direction: column;
+    }
+
+    .prof-row .poster-left img {
+        margin: -5% auto;
+    }
+
+    .prof-row .poster-left img {
+        margin: -5% auto;
+    }
+
+    .for_professionals .sign_btn {
+        width: 194px;
+        height: 50px;
+    }
+
+    .for_professionals .block_title h1 {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .for_professionals .right-poster-hand {
+        margin-top: 25%;
+        width: 100%;
+        margin-left: 2.5%;
+        margin-right: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .for_professionals .row {
+        margin-top: 120px;
+    }
+
+    .desktop-mockup {
+        display: none !important;
+    }
+
+    .mobile-mockup {
+        display: inline;
+    }
+
+    .prof-row {
+        flex-direction: column-reverse;
+    }
+
+    .prof-row .poster-left img {
+        max-height: 370px;
+    }
+
+    .prof-row .poster-left {
+        width: 100%;
+        margin-top: 40px;
+        margin-left: -5%;
+    }
+
+    .prof-row .prof-half-txt {
+        font-size: 18px;
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 5% !important;
+        line-height: 26px;
+    }
+
+    .for_professionals .block_title h1 {
+        text-align: left;
+    }
+
+    .center-txt h1 {
+        text-align: center !important;
+    }
+
+    .prof-row {
+        margin-top: 55px;
+    }
+
+    .tm_items {
+        flex-flow: wrap;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+
+    .item {
+        width: 150px;
+        height: 155px;
+        margin: 12px;
+    }
+
+    .item-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .double-poster-row .card-content {
+        width: 80%;
+    }
+
+    .join-team-block {
+        flex-direction: column;
+        border-radius: 0px 50px 50px 0px;
+        margin-top: 58px;
+    }
+
+    .join-team-block .right-part img {
+        max-height: 270px;
+        margin-left: 60%;
+        display: block;
+        width: auto;
+    }
+
+    .join-team-block .left-part .title {
+        font-size: 30px;
+        line-height: 34px;
+        margin-top: 50px;
+        margin-bottom: 12px;
+    }
+
+    .join-team-block .right-part {
+        display: flex;
+        width: fit-content;
+    }
+
+    .join-team-block .left-part {
+        margin: 20px auto;
+        width: 80%;
+        padding-left: 0 !important;
+    }
+
+}

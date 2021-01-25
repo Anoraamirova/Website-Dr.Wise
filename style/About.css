@@ -1,0 +1,370 @@
+/** @format */
+
+
+.faq-container {
+  margin-bottom: 120p;
+}
+
+.m_top {
+  margin-top: 120px;
+}
+
+.block_title h1,
+h2 {
+  margin: 0 auto;
+}
+
+.poster_block {
+  height: auto;
+  max-height: 572px;
+
+  max-width: 1750px;
+  margin-left: -2.5%;
+  padding: 40px 0;
+  background: #f9f9f9;
+  border-radius: 0px 500px 500px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.poster_block_right {
+  height: auto;
+  margin-left: 7.5%;
+  width: 95%;
+  padding: 40px 0;
+  background: #f9f9f9;
+  border-radius: 500px 0px 0px 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 120px;
+}
+
+.poster-left {
+  width: 95%;
+}
+
+.poster_block_content {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slogan_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slogan_part .slogan h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 95px;
+  color: #3b3b3b;
+}
+
+.download_btns {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+.download_button {
+  width: fit-content;
+  max-width: 220px;
+  height: 60px;
+  padding: 0 36px;
+  background: #ffffff;
+  box-shadow: 0px 15px 35px rgba(185, 185, 185, 0.25);
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.download_button:hover {
+  transition: 0.2s;
+  box-shadow: 0px 15px 35px rgba(185, 185, 185, 0.55);
+}
+
+.download_button img {
+  height: 45px;
+}
+
+.black {
+  background-color: #000;
+}
+
+.mockup_part {
+  display: flex;
+  align-items: center;
+}
+
+.phone_mockup-screen img {
+  max-height: 800px;
+  height: auto;
+  margin-right: 40px;
+}
+
+.poster_block p,
+.poster_block_right p {
+  font-family: "Geometria";
+  margin: 0 auto;
+
+  margin: 0 auto;
+  padding: 40px 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  color: #515151;
+}
+
+.poster_txt_big p {
+  width: 90%;
+  max-width: 1380px;
+}
+
+.poster_txt_small p {
+  width: 95%;
+  max-width: 560px;
+}
+
+
+/* ------------DEBOB TECHNOLOGY ---------------- */
+
+.poster_block_dekob_img {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.dekob {
+  display: flex;
+  justify-content: space-between;
+}
+
+.poster_first {
+  width: 60%;
+}
+
+.poster_second {
+  width: 42%;
+}
+
+.left-poster-txt {
+  margin-top: 100px;
+}
+
+.poster_first {
+  width: 60%;
+}
+
+.poster_second {
+  width: 42%;
+  margin-right: -2.5%;
+  margin-left: 0;
+}
+
+.left-poster-txt {
+  margin-top: 100px;
+}
+
+.bottom-margin {
+  margin-bottom: 120px;
+}
+
+.visit-dekob {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 75%;
+}
+
+.visit-dekob {
+  width: 85%;
+}
+
+.visit-dekob p {
+  width: auto !important;
+  margin: inherit;
+}
+
+.visit-dekob .adv-btn {
+  margin: inherit;
+  width: 175px;
+}
+
+
+@media screen and (max-width: 1600px) {
+  .slogan_part .slogan h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .phone_mockup-screen img {
+    max-height: 440px;
+    margin-right: 20px;
+  }
+
+  .download_button {
+    padding: 0 25px;
+    height: 50px;
+  }
+
+  .download_button img {
+    height: 35px;
+  }
+
+  .poster_block p {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .poster_block p {
+    font-size: 14px;
+    line-height: 28px;
+
+  }
+
+  .poster_first {
+    width: 55%;
+  }
+
+  .poster_second {
+    width: 47%;
+  }
+
+  .phone_mockup-screen img {
+    max-height: 330px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .poster_block {
+    max-height: none !important;
+    width: 100%;
+    border-radius: 0 50px 50px 0;
+  }
+
+  .poster_block_content {
+    flex-direction: column;
+    padding-left: -2.5%;
+  }
+
+  .slogan_part .slogan h1 {
+    font-weight: bold;
+    margin: 25px auto;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .download_btns {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .download_button {
+    padding: 0 25px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .download_button img {
+    height: 50px;
+  }
+
+  .mockup_part {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .phone_mockup-screen img {
+
+    max-height: 300px;
+
+    max-height: 280px;
+
+
+    margin-right: 0 !important;
+  }
+
+  .logo-name {
+    height: 20px;
+    margin-top: 20px;
+    padding-bottom: 35px;
+  }
+
+  .poster_second {
+    margin-left: 2.5%;
+    margin-right: 0;
+  }
+
+  .poster_block_right {
+    border-radius: 50px 0 0 50px;
+    margin-top: 36px;
+  }
+
+  .poster_block p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0;
+    max-width: 85%;
+  }
+
+  .poster_txt_small p {
+    width: auto;
+    max-width: 85%;
+  }
+
+  .left-poster-txt {
+    margin-top: 36px;
+  }
+
+  .dekob {
+    flex-direction: column;
+  }
+
+  .poster_block_content {
+    width: auto;
+  }
+
+
+  .bottom-margin {
+    margin-bottom: 60px;
+  }
+
+  .visit-dekob p {
+    max-width: 100% !important;
+  }
+
+  .visit-btn {
+    margin-top: 10px;
+  }
+
+  .visit-dekob .adv-btn {
+    width: 120px;
+  }
+
+  .adv-btn {
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .phone_mockup-screen img {
+    max-height: 220px;
+  }
+}

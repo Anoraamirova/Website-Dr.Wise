@@ -1,0 +1,718 @@
+.corona_page .block_title h1 {
+    margin-top: 100px;
+
+}
+
+.first_poster {
+    background: #F9F9F9;
+    border-radius: 0px 300px 300px 100px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.corona-ico {
+    position: absolute;
+    right: 10%;
+}
+
+.corona-ico-bottom {
+    position: absolute;
+    left: -3%;
+    bottom: 0;
+}
+
+.first_poster_content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10% 5%;
+}
+
+.update_date {
+    font-size: 16px;
+    line-height: 45px;
+    color: #858585;
+}
+
+.first_poster_content p,
+.left-risk-poster p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #515151;
+}
+
+.first_poster_content .bold {
+    font-weight: 500;
+}
+
+.link-row {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.corona_links {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FF6969;
+
+}
+
+.link-row a {
+    margin: 0;
+}
+
+.see_btn {
+    width: 233px;
+    height: 65px;
+    background: #FF6969;
+    border-radius: 50px 0px 50px 50px;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.see_btn:hover {
+    transition: 0.2s;
+    background: #E75656;
+}
+
+.risk-row {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-risk-poster {
+    width: 60%;
+    margin-left: -2.5%;
+    background: #F9F9F9;
+    border-radius: 0px 0px 500px 0px;
+    padding: 60px 70px 70px 12%;
+
+}
+
+.left-risk-poster p {
+    max-width: 840px;
+}
+
+.left-risk-poster .see_btn {
+    margin-top: 15px;
+}
+
+.left-risk-poster .title {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 95px;
+    color: #515151;
+
+}
+
+.right-risk-poster {
+    width: 35%;
+    background: #F9F9F9;
+    border-radius: 500px 0px 0px 500px;
+    margin-right: -2.5%;
+    display: flex;
+}
+
+.right-risk-poster img {
+    height: 600px;
+    margin: -10% auto;
+}
+
+.treat-row {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.treat-row .left-img {
+    background: #F9F9F9;
+    border-radius: 0px 500px 500px 0px;
+    display: flex;
+    height: -webkit-fill-available;
+    align-items: center;
+    margin-left: -2.5%;
+    width: auto;
+}
+
+.left-img img {
+    margin-top: -15%;
+    margin-left: 60px;
+    margin-right: 197px;
+}
+
+.right-blocks {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.right-blocks .check-column {
+    background: #F9F9F9;
+    border-radius: 50px;
+    padding: 25px 30px;
+    display: flex;
+    width: 40%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.right-blocks .check-column .title,
+.what-can {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 25px;
+    line-height: 28px;
+    text-align: center;
+    color: #515151;
+}
+
+.what-can {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.main-list {
+    padding-left: 20px;
+}
+
+.main-list ul {
+    margin-top: 20px;
+    max-width: 390px;
+    padding: 0;
+}
+
+.main-list li {
+    font-weight: 400;
+    list-style: none;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 15px;
+
+    max-width: 360px;
+    color: #515151;
+    margin-left: 1em;
+    position: relative;
+}
+
+.main-list li:not(:first-child) {
+    margin-top: 15px;
+}
+
+.main-list li:not(:last-child) {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.main-list li:before {
+    content: '';
+    display: inline-block;
+    width: 1.5rem;
+    height: 11px;
+    left: -2rem;
+    top: 0.5em;
+    position: absolute;
+    background-image: url("../src/corona/tick.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.no-list li:before {
+    background-image: url("../src/corona/cross-list.svg");
+}
+
+.inside-list ul {
+    padding-left: 5px;
+    margin-top: 5px;
+}
+
+.inside-list li {
+    border-bottom: none;
+}
+
+.inside-list li::before {
+    content: "\2022";
+    color: #69B245;
+    background: none;
+    display: inline-block;
+    width: 1em;
+    margin-left: 1em;
+    margin-top: -0.5em;
+}
+
+.questions-row {
+    width: 102.5%;
+    margin-top: 120px;
+    margin-left: -2.5%;
+    background: #FFFFFF;
+    border-radius: 0px 350px 350px 0px;
+    box-shadow: 0px 15px 40px rgba(217, 217, 217, 0.25);
+}
+
+.questions-row .faq-block {
+    display: flex;
+    margin: unset;
+    width: auto;
+    padding: 6% 4.5%;
+}
+
+.questions-row .faq-block .questions-block {
+    margin: 0 auto;
+}
+
+.questions-row .faq-block .block_title h1 {
+    margin-top: 0;
+    max-width: 600px;
+    line-height: 85px;
+    text-align: left;
+    margin-bottom: 15px !important;
+}
+
+.questions-row .faq-block .block_title h4 {
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 45px;
+    color: #515151;
+    text-align: left;
+}
+
+.first_poster_content .poster-title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 85px;
+    color: #3B3B3B;
+}
+
+.mental-health-row {
+    margin-top: 120px;
+}
+
+.mental-health-row .first_poster_content {
+    padding: 5%;
+}
+
+.mental-health-row .corona-ico-bottom {
+    left: 0;
+}
+
+.sign-row {
+    margin: 100px auto;
+    width: 90%;
+}
+
+.sign-row .blue-oval {
+    background: #00ADE1;
+    border-radius: 500px;
+    align-items: center;
+}
+
+.sign-row .blue-oval .poster_block_content {
+    align-items: center;
+}
+
+.sign-row .sign_part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-row .sign-up {
+    padding-right: 45px;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    margin-right: 50px;
+}
+
+.sign-row h3 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+    max-width: 220px;
+}
+
+.sign-in h3 {
+    font-weight: 500;
+}
+
+.sign-row .phone_mockup-screen img {
+    margin-left: 12%;
+    margin-right: 0;
+}
+
+.sign-row .start-btn {
+    background: #FFFFFF;
+    border: 2px solid #FF6969;
+    color: #FF6969;
+}
+
+
+@media screen and (max-width:1841px) {
+    .phone_mockup-screen img {
+        height: 380px;
+    }
+}
+
+@media screen and (max-width:1601px) {
+    .poster_block_content {
+        width: 80%;
+    }
+
+    .phone_mockup-screen img {
+        height: 280px;
+    }
+
+    .left-img img {
+        height: 500px;
+        margin-left: 40px;
+        margin-right: 149px;
+    }
+
+    .right-risk-poster img {
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    .left-risk-poster .title {
+        font-size: 35px;
+        line-height: 75px;
+    }
+
+    .left-risk-poster {
+        width: 60%;
+        margin-left: -2.5%;
+        background: #F9F9F9;
+        border-radius: 0px 0px 400px 0px;
+        padding: 30px 30PX 30PX 5%;
+    }
+
+    .left-risk-poster p {
+        max-width: 700px;
+    }
+
+    .right-blocks .check-column {
+        padding: 15px;
+    }
+
+}
+
+@media screen and (max-width:1400px) {
+    .sign-row .phone_mockup-screen img {
+        margin-left: 7%;
+        height: 250px;
+    }
+
+    .questions-row .faq-block .block_title h1 {
+        margin-top: 0;
+        max-width: 400px;
+        font-size: 35px;
+        line-height: 60px;
+        margin: 0;
+    }
+
+    .left-img img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .left-risk-poster {
+        border-radius: 0px 0px 200px 0px;
+    }
+
+    .see_btn {
+        width: 150px;
+        height: 50px;
+        background: #FF6969;
+        border-radius: 50px 0px 50px 50px;
+        font-weight: 450;
+        font-size: 16px;
+    }
+
+    .sign-row h3 {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .first_poster {
+        border-radius: 0px 100px 100px 100px;
+    }
+
+    .corona-ico {
+        right: 0;
+    }
+
+    .left-img img {
+        margin-left: 15px;
+        margin-right: 120px;
+    }
+
+    .questions-row .faq-block .block_title h1 {
+        max-width: 300px;
+        font-size: 30px;
+        line-height: 50px;
+
+    }
+
+    .faq-block .block_title {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .corona_page .block_title h1 {
+        margin-top: 35px;
+        font-size: 30px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .corona_page .first_poster {
+        border-radius: 0px 50px 50px 50px;
+    }
+
+    .corona-ico {
+        display: none;
+    }
+
+    .corona_page .first_poster_content p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .corona_page .link-row {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+
+    }
+
+    .corona-ico-bottom {
+        left: unset;
+        right: -6%;
+        bottom: -25px;
+    }
+
+    .corona_page .link-row a {
+        margin-bottom: 15px;
+    }
+
+    .corona_links {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        /* identical to box height */
+
+        text-align: left;
+    }
+
+    .corona_page .risk-row {
+        flex-direction: column;
+    }
+
+    .corona_page .left-risk-poster {
+        width: 90%;
+        margin-right: 10%;
+        border-radius: 0px 50px 50px 0px;
+        padding: 15px 25px;
+        margin-left: 0;
+    }
+
+    .left-risk-poster .title {
+        font-size: 30px;
+        line-height: 38px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    .left-risk-poster .see_btn {
+        padding: 5px 15px;
+    }
+
+    .right-risk-poster {
+        width: 85%;
+        background: #F9F9F9;
+        border-radius: 50px 0px 0px 50px;
+        margin-right: -32.5%;
+        margin-top: 60px;
+        display: flex;
+    }
+
+    .right-risk-poster img {
+        height: 350px;
+        margin: -40 auto;
+    }
+
+    .corona_page .block_title h1 {
+        font-size: 30px;
+        line-height: 38px;
+        margin-top: 80px;
+    }
+
+    .treat-row .left-img {
+        display: none;
+    }
+
+    .treat-row {
+        margin: 0 auto;
+    }
+
+    .treat-row .right-blocks {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .left-risk-poster p {
+        padding-left: 10px;
+    }
+
+    .right-blocks .check-column {
+        width: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .main-list li:before {
+        height: 9px;
+        left: -1rem;
+    }
+
+    .main-list {
+        padding-left: 10px;
+    }
+
+    .main-list li {
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 0.5em;
+        padding-bottom: 10px;
+    }
+
+    .check-column img {
+        height: 49px;
+    }
+
+    .right-blocks .check-column .title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 15px;
+
+        text-align: center;
+    }
+
+    .check-column .what-can {
+        font-size: 16px;
+        line-height: 28px;
+        /* or 175% */
+
+
+    }
+
+    .questions-row {
+        border-radius: 20px;
+        margin-top: 60px;
+    }
+
+    .questions-row .block_title {
+        width: 100%;
+
+    }
+
+    .questions-row .faq-block .block_title h1 {
+        max-width: fit-content;
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 5px !important;
+    }
+
+    .questions-row .faq-block .block_title h4 {
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 5px;
+    }
+
+    .mental-health-row {
+        margin-top: 60px;
+    }
+
+    .mental-health-row .first_poster {
+        border-radius: 40px;
+    }
+
+    .mental-health-row .first_poster .first_poster_content img {
+        height: 44px;
+    }
+
+    .first_poster_content .poster-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .see_btn {
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 21px;
+        width: 174px;
+        margin-bottom: 40px;
+    }
+
+    .mental-health-row .corona-ico-bottom {
+        right: 0;
+        left: unset;
+    }
+
+    .sign-row .blue-oval {
+        border-radius: 40px;
+    }
+
+    .sign-row h3 {
+        text-align: center;
+    }
+
+    .sign-row .poster_block_content {
+        width: 100%;
+    }
+
+    .sign-row .sign_part {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .sign-row .sign-up {
+        padding-right: 0;
+        border-right: none;
+        padding-bottom: 30px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        margin-right: unset;
+    }
+
+    .sign-row .phone_mockup-screen img {
+        height: 210px;
+        margin: 22px auto;
+    }
+
+    .sign-row .start-btn,
+    .sign-row .see-btn {
+        margin: 0 auto;
+    }
+}

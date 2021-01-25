@@ -1,0 +1,51 @@
+.grey-container {
+    width: 100%;
+    background: #F9F9F9;
+
+}
+
+.privacy-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.privacy-content .main-list ul,
+.privacy-content .main-list li {
+    max-width: unset;
+}
+
+.privacy-content .main-list li:before {
+    background-image: url("../src/img/blue-tick.svg");
+}
+
+.privacy-content .main-list li {
+    border-bottom: none;
+    padding-bottom: 8px;
+}
+
+.privacy-content .main-list ul {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #515151;
+}
+
+.privacy-content .main-list .info {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 45px;
+    color: #515151
+}
+
+.last {
+    margin-top: 120px;
+}
+
+@media screen and (max-width:1040px) {
+    .privacy-content {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+}

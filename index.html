@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr.Wise</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/advantages.css" />
+    <link rel="shortcut icon" href="./src/img/Group.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="shortcut icon" href="./src/img/Group.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- ----------- BANNER START --------- -->
+    <div class="down-container">
+      <nav class="navbar-outer-container">
+        <div class="hamburger-btn" onclick="toggleFunction(event)">
+          <i class="fas fa-bars openBurger"></i
+          ><i class="fas fa-times closeBurger"></i>
+        </div>
+        <div class="nav-logo">
+          <a href="index.html"
+            ><img src="./src/img/logo.svg" alt="logo" style="width: 80%"
+          /></a>
+        </div>
+
+        <div class="nav-links-for-large-devices">
+          <span class="why-drwise-dropbtn"
+            ><a href="#"
+              >Why Dr.Wise <i class="fas fa-chevron-down down-red-i"></i
+              ><i class="fas fa-chevron-up up-red-i"></i
+            ></a>
+            <div class="why-drwise-dropdown">
+              <a href="./index.html#benefits">Benefits</a>
+              <a href="./index.html#how_it_works">How it works</a>
+              <a href="./index.html#services">Services</a>
+              <a href="./for_professional.html">For Professionals</a>
+            </div>
+          </span>
+          <span><a href="./FAQ.html">FAQ</a></span>
+          <span><a href="./Professionals.html">Health Professionals</a></span>
+          <span class="lang-dropbtn">
+            <button class="lang-btn">
+              EN <i class="fas fa-chevron-down down-white-i"></i
+              ><i class="fas fa-chevron-up up-white-i"></i>
+            </button>
+            <div class="lang-dropdown">
+              <a href="#">EN</a>
+              <a href="#">RU</a>
+            </div>
+          </span>
+        </div>
+
+        <div class="nav-links-for-small-devices">
+          <span class="nav-modal-buttons" id="hover-modal-btns">
+            <button class="login-modal-btn" onclick="loginModalFunc()">
+              Login
+            </button>
+            <button class="sign-up-modal-btn" onclick="SignUpModalFunc()">
+              Sign Up <i class="fas fa-chevron-down down-white-i"></i>
+            </button>
+          </span>
+
+          <div class="modal" id="LoginModal">
+            <div class="login-modal-content">
+              <span class="close-login-modal" onclick="closeLogin()"
+                >&times;</span
+              >
+              <form class="nav-login-form" autocomplete="off">
+                <label for="nav-login">Enter your login:</label>
+                <input type="text" id="nav-login" name="login" />
+                <label for="nav-login-password">Enter your password:</label>
+                <input
+                  type="password"
+                  id="nav-login-password"
+                  name="password"
+                />
+                <button class="login-btn-sign-in">Sign in</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="modal" id="SignUpModal">
+            <div class="signUp-modal-content">
+              <span class="close-login-modal" onclick="closeSignUp()"
+                >&times;</span
+              >
+              <a href="#">As Patient</a>
+              <a href="#">As Health Professional</a>
+            </div>
+          </div>
+
+          <a href="#">Why Dr.Wise</a>
+          <div class="nav-inline-links">
+            <a href="./index.html#benefits">Benefits</a>
+            <a href="./index.html#how_it_works">How it works</a>
+            <a href="./index.html#services">Services</a>
+            <a href="Professionals.html">For Professionals</a>
+          </div>
+          <a href="./FAQ.html">FAQ</a>
+          <a href="./for_professional.html">Health Professionals</a>
+          <span>
+            <button class="lang-modal-btn" onclick="langModalFunc()">
+              EN <i class="fas fa-chevron-down down-white-i"></i>
+            </button>
+            <div class="modal" id="langModal">
+              <div class="lang-modal-content">
+                <span class="close-lang-modal" onclick="closeLang()"
+                  >&times;</span
+                >
+                <a href="#">EN</a>
+                <a href="#">RU</a>
+              </div>
+            </div>
+          </span>
+        </div>
+
+        <div class="nav-buttons" id="hover-btns">
+          <span class="login-dropbtn">
+            <button onmouseover="hoverColor1()">Login</button>
+            <div class="login-dropdown">
+              <form class="nav-login-form" autocomplete="off">
+                <label for="nav-login">Enter your login:</label>
+                <input type="text" id="nav-login" name="login" />
+                <label for="nav-login-password">Enter your password:</label>
+                <input
+                  type="password"
+                  id="nav-login-password"
+                  name="password"
+                />
+                <button class="login-btn-sign-in">Sign in</button>
+              </form>
+            </div>
+          </span>
+          <span class="sign-up-dropbtn">
+            <button onmouseover="hoverColor2()">
+              Sign Up <i class="fas fa-chevron-down down-white-i"></i
+              ><i class="fas fa-chevron-up up-white-i"></i>
+            </button>
+            <div class="sign-up-dropdown">
+              <a href="#">As Patient</a>
+              <a href="#">As Health Professional</a>
+            </div>
+          </span>
+        </div>
+      </nav>
+      <div class="header-down-container">
+        <div class="banner">
+          <!-- <img
+        src="./src/img/Group 2825.png"
+        alt="Banner"
+        class="banner_bg"
+       
+      /> -->
+
+          <div class="banner_txt" data-aos="fade-right">
+            <h1>
+              Your personal Health Professional is
+              <span style="color: #00acde">with you</span>
+            </h1>
+            <h3>24 hours a day, seven days a week</h3>
+            <div class="banner_join">
+              <h3>
+                <span style="color: #0e497d"> Join now DrWise,</span> enjoy the
+                new healthcare.
+              </h3>
+              <a href="#">
+                <div class="join_btn">Sign up now</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------- BANNER END --------- -->
+    <!-- --------------Benefits Block START--------------- -->
+    <h1
+      class="benefit-title mobile-benefits"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      id="benefits"
+    >
+      The benefits of an <span class="make-span-blue">online  visit</span>
+    </h1>
+
+    <div class="container">
+      <div class="benefits">
+        <div class="row">
+          <div class="benefits-card">
+            <img
+              src="./src/img/benefits/benefit1.png"
+              alt="benefits1"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            />
+            <div
+              class="card-txt-block"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <div class="card-title">
+                <span class="blue">Choose</span> doctor
+                <div class="blue">...</div>
+              </div>
+              <div class="card-txt">
+                You are free to choose Health Professional who you wish
+              </div>
+            </div>
+          </div>
+          <div class="benefits-card middle">
+            <img
+              src="./src/img/benefits/benefit2.png"
+              alt="benefits1"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            />
+            <div
+              class="card-txt-block"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
+              <div class="card-title">
+                <span class="blue">Open</span> 24 hours
+                <div class="blue">...</div>
+              </div>
+              <div class="card-txt">Access the moment you need a doctor</div>
+            </div>
+          </div>
+          <div class="benefits-card right-up">
+            <img
+              src="./src/img/benefits/benefit3.png"
+              alt="benefits1"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            />
+            <div
+              class="card-txt-block"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <div class="card-title">
+                <span class="blue">Visits</span> anywhere
+                <div class="blue">...</div>
+              </div>
+              <div class="card-txt">
+                Join DrWise and Access healthcare from anywhere, at any time
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="benefits-card left-bottom">
+            <img
+              src="./src/img/benefits/benefit4.png"
+              alt="benefits1"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            />
+            <div
+              class="card-txt-block"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <div class="card-title">
+                <span class="blue">Privacy</span> of health
+                <div class="blue">...</div>
+              </div>
+              <div class="card-txt">
+                Anonymize yourself when you need it in healthcare.
+              </div>
+            </div>
+          </div>
+          <div class="benefits-card middle">
+            <img
+              src="./src/img/benefits/benefit5.png"
+              alt="benefits1"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            />
+            <div
+              class="card-txt-block"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
+              <div class="card-title">
+                <span class="blue">Clean</span> feedbacks
+                <div class="blue">...</div>
+              </div>
+              <div class="card-txt">
+                Only patint’s service qualoty scores are used
+              </div>
+            </div>
+          </div>
+          <div class="benefits-card right-bottom">
+            <img
+              src="./src/img/benefits/benefit6.png"
+              alt="benefits1"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            />
+            <div
+              class="card-txt-block"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <div class="card-title">
+                <span class="blue">Health </span> for lovely family member
+                <div class="blue">...</div>
+              </div>
+              <div class="card-txt">
+                Healthcare for you and all your family member Even for your pets
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="./advantages.html">
+          <div class="adv-btn">Learn more about advantages</div>
+        </a>
+      </div>
+    </div>
+    <!-- --------------Benefits Block END--------------- -->
+    <!-- --------------Corona ROW START--------------- -->
+    <div class="corona-block" data-aos="fade-in" data-aos-duration="2000">
+      <div class="corona-txt">
+        <div>How we help to fight with</div>
+        <img src="./src/img/coronavirus 1.svg" alt="Corona" height="57px" />
+        <div>coronavirus</div>
+      </div>
+      <div class="btn corona">Learn more</div>
+    </div>
+    <!-- --------------Corona ROW End--------------- -->
+
+    <!-- --------------How it works  START--------------- -->
+    <div class="common-container">
+      <!-- swiper -->
+      <h1
+        class="how-it-works-title"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        id="how_it_works"
+      >
+        How <span class="make-span-blue">it works</span>
+      </h1>
+      <!-- Slider main container -->
+      <div class="swiper-container" data-aos="fade-in" data-aos-duration="1500">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="slideshou-item left-box-radius">
+              <h2>
+                Download <span class="slideshou-item-title">DrWise </span>app
+                from market<br />on your phone
+              </h2>
+              <img
+                src="./src/how_it_works/phone1.png"
+                alt="phone1"
+                class="img1"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slideshou-item middle-box-radius">
+              <h2>
+                Register <br />and
+                <span class="slideshou-item-title">create your profile</span>
+              </h2>
+              <img
+                src="./src/how_it_works/phone2.png"
+                alt="phone1"
+                class="img2"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slideshou-item right-box-radius">
+              <h2>
+                Find <br />
+                <span class="slideshou-item-title">
+                  a Health Professional
+                </span>
+              </h2>
+              <img
+                src="./src/how_it_works/phone3.png"
+                alt="phone1"
+                class="img3"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slideshou-item left-box-radius">
+              <h2>
+                Health Professional will call you <br />
+                <span class="slideshou-item-title"> on appointment time.</span>
+              </h2>
+              <p class="slideshou-item-p">
+                Make an Appointment with your chosen Health Professional or
+                start meeting with the appropriate doctor immediately.
+              </p>
+              <img
+                src="./src/how_it_works/phone4.png"
+                alt="phone1"
+                class="img4"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slideshou-item middle-box-radius">
+              <h2>
+                Complete Easy,<br />
+                <span class="slideshou-item-title"> Secure Payment</span>
+              </h2>
+              <img
+                src="./src/how_it_works/phone5.png"
+                alt="phone1"
+                class="img5"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slideshou-item right-box-radius">
+              <h2>
+                Start conversation <br /><span class="slideshou-item-title">
+                  with Health Professional</span
+                >
+              </h2>
+              <img
+                src="./src/how_it_works/phone6.png"
+                alt="phone1"
+                class="img6"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div id="prevArrowbtn" class="swiper-button-prev"></div>
+        <div id="nextArrowbtn" class="swiper-button-next"></div>
+      </div>
+
+      <div class="slideshou-buttons">
+        <button onclick="leftbtnFunc(event)">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button onclick="rightbtnFunc(event)">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- swiper -->
+
+      <!-- Services start -->
+      <div>
+        <h1
+          class="services"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          id="services"
+        >
+          Services
+        </h1>
+        <div
+          id="service-id"
+          class="services-container"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <div>
+            <img src="./src/services_icons/icon1.svg" alt="icon1" />
+            <p>Urgent Care</p>
+          </div>
+          <div>
+            <img src="./src/services_icons/icon2.svg" alt="icon2" />
+            <p>Nutrition & Diet</p>
+          </div>
+          <div>
+            <img src="./src/services_icons/icon3.svg" alt="icon3" />
+            <p>Sports medicine</p>
+          </div>
+          <div>
+            <img src="./src/services_icons/icon4.svg" alt="icon4" />
+            <p>Endocrinology</p>
+          </div>
+          <div>
+            <img src="./src/services_icons/icon5.svg" alt="icon5" />
+            <p>Pediatric</p>
+          </div>
+          <div>
+            <img src="./src/services_icons/icon6.svg" alt="icon6" />
+            <p>Elderly care</p>
+          </div>
+          <div class="hidden-service">
+            <img src="./src/services_icons/icon7.svg" alt="icon7" />
+            <p>Rheumatology</p>
+          </div>
+          <div class="hidden-service">
+            <img src="./src/services_icons/icon8.svg" alt="icon8" />
+            <p>Neurology</p>
+          </div>
+          <div class="hidden-service">
+            <img src="./src/services_icons/icon9.svg" alt="icon9" />
+            <span class="service-span-text">
+              <p>Pregnancy and</p>
+              <p>Postpartum Care</p>
+            </span>
+          </div>
+          <div class="hidden-service">
+            <img src="./src/services_icons/icon10.svg" alt="icon10" />
+            <p>Menopause Counseling</p>
+          </div>
+          <div class="hidden-service">
+            <img src="./src/services_icons/icon11.svg" alt="icon11" />
+            <p>Continuous Follow-up</p>
+          </div>
+          <div class="hidden-service">
+            <img src="./src/services_icons/icon12.svg" alt="icon12" />
+            <span class="service-span-text">
+              <p>Breastfeeding &</p>
+              <p>Baby Care</p>
+            </span>
+          </div>
+          <div class="hidden-service">
+            <img src="./src/services_icons/icon13.svg" alt="icon13" />
+            <p>Psychiatry</p>
+          </div>
+          <div class="hidden-service">
+            <img src="./src/services_icons/icon14.svg" alt="icon14" />
+            <p>Oncology</p>
+          </div>
+          <div class="hidden-service">
+            <img src="./src/services_icons/icon15.svg" alt="icon15" />
+            <p>Women Health</p>
+          </div>
+          <div class="hidden-service">
+            <img src="./src/services_icons/icon16.svg" alt="icon16" />
+            <p>Hematology</p>
+          </div>
+        </div>
+
+        <div id="hide-btn-itself" class="whole-list">
+          <button class="open-whole-list-btn" onclick="openWholeList(event)">
+            Open the whole list
+          </button>
+        </div>
+      </div>
+      <!-- Services end -->
+
+      <!-- Meet our Health Proffesionals start -->
+
+      <div id="meet-health">
+        <h1
+          class="meet-health-title"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          Meet our Health <span class="make-span-blue">Professionals</span>
+        </h1>
+        <div
+          class="health-prof-container"
+          data-aos="fade-in"
+          data-aos-duration="1500"
+        >
+          <div class="health-prof-container-item">
+            <img
+              class="prof-info-img"
+              src="./src/health_prof_img/p1.png"
+              alt=""
+            />
+            <div class="prof-info">
+              <h3>Larisa Mironova</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="health-prof-container-item">
+            <img
+              class="prof-info-img"
+              src="./src/health_prof_img/p2.png"
+              alt=""
+            />
+            <div class="prof-info">
+              <h3>Larisa Mironova</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="health-prof-container-item">
+            <img
+              class="prof-info-img"
+              src="./src/health_prof_img/p3.png"
+              alt=""
+            />
+            <div class="prof-info">
+              <h3>Larisa Mironova</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="see-all-container-btn">
+          <a href="./Professionals.html"
+            ><button class="see-all-btn">See all</button></a
+          >
+        </div>
+      </div>
+
+      <!-- User opinions -->
+      <div class="user-block">
+        <h1
+          class="user-opinions-title"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          User <span class="make-span-blue">opinions </span>
+        </h1>
+        <div
+          class="user-opinions-container"
+          data-aos="fade-in"
+          data-aos-duration="1500"
+        >
+          <div class="user-opinions-contanier-item">
+            <img src="./src/user_opinions/girl.png" alt="" />
+            <p>Alice Smith <span class="make-span-right">04.12.2020</span></p>
+            <p>''</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div class="user-opinions-contanier-item">
+            <img src="./src/user_opinions/boy.png" alt="" />
+            <p>Alice Smith <span class="make-span-right">04.12.2020</span></p>
+            <p>''</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div class="user-opinions-contanier-item">
+            <img src="./src/user_opinions/girl.png" alt="" />
+            <p>Alice Smith <span class="make-span-right">04.12.2020</span></p>
+            <p>''</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div class="user-opinions-contanier-item">
+            <img src="./src/user_opinions/boy.png" alt="" />
+            <p>Alice Smith <span class="make-span-right">04.12.2020</span></p>
+            <p>''</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div class="user-opinions-contanier-item">
+            <img src="./src/user_opinions/girl.png" alt="" />
+            <p>Alice Smith <span class="make-span-right">04.12.2020</span></p>
+            <p>''</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div class="user-opinions-contanier-item">
+            <img src="./src/user_opinions/boy.png" alt="" />
+            <p>Alice Smith <span class="make-span-right">04.12.2020</span></p>
+            <p>''</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="opinion swiper-container"
+          data-aos="fade-in"
+          data-aos-duration="2000"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="user-opinions-contanier-item">
+                <img src="./src/user_opinions/girl.png" alt="" />
+                <p>
+                  Alice Smith <span class="make-span-right">04.12.2020</span>
+                </p>
+                <p>''</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="user-opinions-contanier-item">
+                <img src="./src/user_opinions/boy.png" alt="" />
+                <p>
+                  Alice Smith <span class="make-span-right">04.12.2020</span>
+                </p>
+                <p>''</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="user-opinions-contanier-item">
+                <img src="./src/user_opinions/girl.png" alt="" />
+                <p>
+                  Alice Smith <span class="make-span-right">04.12.2020</span>
+                </p>
+                <p>''</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="user-opinions-contanier-item">
+                <img src="./src/user_opinions/boy.png" alt="" />
+                <p>
+                  Alice Smith <span class="make-span-right">04.12.2020</span>
+                </p>
+                <p>''</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="user-opinions-contanier-item">
+                <img src="./src/user_opinions/girl.png" alt="" />
+                <p>
+                  Alice Smith <span class="make-span-right">04.12.2020</span>
+                </p>
+                <p>''</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="user-opinions-contanier-item">
+                <img src="./src/user_opinions/boy.png" alt="" />
+                <p>
+                  Alice Smith <span class="make-span-right">04.12.2020</span>
+                </p>
+                <p>''</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="opinion-prev" class="swiper-button-prev"></div>
+          <div id="opinion-next" class="swiper-button-next"></div>
+        </div>
+        <div class="slideshou-buttons opinion-hidden-btns">
+          <button onclick="prevOpinion(event)">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button onclick="nextOpinion(event)">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="common-container">
+        <div class="footer-container">
+          <div>
+            <div class="footer-logo">
+              <img src="./src/img/logo.svg" alt="" />
+              <p class="footer-logo-title">The new way of health care</p>
+              <div class="footer-social-icons">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-lists">
+            <ul>
+              <li>Menu</li>
+              <li><a href="#benefits"> Why Dr.Wise?</a></li>
+              <li><a href="./FAQ.html"> FAQ</a></li>
+              <li>
+                <a href="./Professionals.html"> Our Health Professionals</a>
+              </li>
+            </ul>
+            <ul>
+              <li>About us</li>
+
+              <li><a href="./About_DrWise.html">About Dr.Wise</a></li>
+
+              <li><a href="./About_Dekob.html">About Dekob</a></li>
+              <li><a href="./Contact_us.html"> Contact Us</a></li>
+              <li><a href="./privacy_policy.html"> Our Privacy Policy</a></li>
+              <li><a href="./terms_of_use.html">Terms of Use</a></li>
+            </ul>
+            <ul class="mob-list">
+              <li>Health Professionals</li>
+              <li><a href="#"> To became a consultant </a></li>
+              <li>
+                <a class="make-text-red" href="for_professional.html"
+                  >For Health Professionals</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-buttons">
+            <a href="#"
+              ><img src="./src/footer/google.svg" style="width: 58%" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./src/footer/app.svg" style="width: 58%" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/mainslider.js"></script>
+    <script src="./js/toggleClass.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/mainservice.js"></script>
+  </body>
+</html>

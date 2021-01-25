@@ -1,0 +1,281 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>\\Contact Us</title>
+    <script src="./js/toggleClass.js"></script>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/About.css" />
+    <link rel="stylesheet" href="./style/contact_us.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./src/img/Group.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <!-- ----------- Header START --------- -->
+    <nav class="navbar-outer-container">
+        <div class="hamburger-btn" onclick="toggleFunction(event)">
+          <i class="fas fa-bars openBurger"></i
+          ><i class="fas fa-times closeBurger"></i>
+        </div>
+        <div class="nav-logo">
+          <a href="index.html"
+            ><img src="./src/img/logo.svg" alt="logo" style="width: 80%"
+          /></a>
+        </div>
+    
+        <div class="nav-links-for-large-devices">
+          <span class="why-drwise-dropbtn"
+            ><a href="#"
+              >Why Dr.Wise <i class="fas fa-chevron-down down-red-i"></i
+              ><i class="fas fa-chevron-up up-red-i"></i
+            ></a>
+            <div class="why-drwise-dropdown">
+              <a href="./index.html#benefits">Benefits</a>
+              <a href="./index.html#how_it_works">How it works</a>
+              <a href="./index.html#services">Services</a>
+              <a href="./for_professional.html">For Professionals</a>
+            </div>
+          </span>
+          <span><a href="./FAQ.html">FAQ</a></span>
+          <span><a href="./Professionals.html">Health Professionals</a></span>
+          <span class="lang-dropbtn">
+            <button class="lang-btn">
+              EN <i class="fas fa-chevron-down down-white-i"></i
+              ><i class="fas fa-chevron-up up-white-i"></i>
+            </button>
+            <div class="lang-dropdown">
+              <a href="#">EN</a>
+              <a href="#">RU</a>
+            </div>
+          </span>
+        </div>
+    
+        <div class="nav-links-for-small-devices">
+          <span class="nav-modal-buttons" id="hover-modal-btns">
+            <button class="login-modal-btn" onclick="loginModalFunc()">
+              Login
+            </button>
+            <button class="sign-up-modal-btn" onclick="SignUpModalFunc()">
+              Sign Up <i class="fas fa-chevron-down down-white-i"></i>
+            </button>
+          </span>
+    
+          <div class="modal" id="LoginModal">
+            <div class="login-modal-content">
+              <span class="close-login-modal" onclick="closeLogin()"
+                >&times;</span
+              >
+              <form class="nav-login-form" autocomplete="off">
+                <label for="nav-login">Enter your login:</label>
+                <input type="text" id="nav-login" name="login" />
+                <label for="nav-login-password">Enter your password:</label>
+                <input
+                  type="password"
+                  id="nav-login-password"
+                  name="password"
+                />
+                <button class="login-btn-sign-in">Sign in</button>
+              </form>
+            </div>
+          </div>
+    
+          <div class="modal" id="SignUpModal">
+            <div class="signUp-modal-content">
+              <span class="close-login-modal" onclick="closeSignUp()"
+                >&times;</span
+              >
+              <a href="#">As Patient</a>
+              <a href="#">As Health Professional</a>
+            </div>
+          </div>
+    
+          <a href="#">Why Dr.Wise</a>
+          <div class="nav-inline-links">
+            <a href="./index.html#benefits">Benefits</a>
+            <a href="./index.html#how_it_works">How it works</a>
+            <a href="./index.html#services">Services</a>
+            <a href="Professionals.html">For Professionals</a>
+          </div>
+          <a href="./FAQ.html">FAQ</a>
+          <a href="./for_professional.html">Health Professionals</a>
+          <span>
+            <button class="lang-modal-btn" onclick="langModalFunc()">
+              EN <i class="fas fa-chevron-down down-white-i"></i>
+            </button>
+            <div class="modal" id="langModal">
+              <div class="lang-modal-content">
+                <span class="close-lang-modal" onclick="closeLang()"
+                  >&times;</span
+                >
+                <a href="#">EN</a>
+                <a href="#">RU</a>
+              </div>
+            </div>
+          </span>
+        </div>
+    
+        <div class="nav-buttons" id="hover-btns">
+          <span class="login-dropbtn">
+            <button onmouseover="hoverColor1()">Login</button>
+            <div class="login-dropdown">
+              <form class="nav-login-form" autocomplete="off">
+                <label for="nav-login">Enter your login:</label>
+                <input type="text" id="nav-login" name="login" />
+                <label for="nav-login-password">Enter your password:</label>
+                <input
+                  type="password"
+                  id="nav-login-password"
+                  name="password"
+                />
+                <button class="login-btn-sign-in">Sign in</button>
+              </form>
+            </div>
+          </span>
+          <span class="sign-up-dropbtn">
+            <button onmouseover="hoverColor2()">
+              Sign Up <i class="fas fa-chevron-down down-white-i"></i
+              ><i class="fas fa-chevron-up up-white-i"></i>
+            </button>
+            <div class="sign-up-dropdown">
+              <a href="#">As Patient</a>
+              <a href="#">As Health Professional</a>
+            </div>
+          </span>
+        </div>
+      </nav>
+
+    <!-- ----------- Header END --------- -->
+    <div class="container bottom-margin">
+        <div class="header-down-container">
+            <!-- ----------- ABOUT DrWise body start ----------- -->
+            <div class="breadcrumbs" data-aos="fade-right">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="Contact_us.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="block_title block_title_margin contact_us_title">
+                <h1 data-aos="fade-down" data-aos-duration="1000">
+                    Contact <span class="blue">Us</span>
+                </h1>
+                <h4 data-aos="fade-down" data-aos-duration="1200">If you have any inquery or business proposal, <span
+                        class="blue">please contact us.</span></h4>
+            </div>
+            <div class="poster_block poster_left contact_us" data-aos="fade-right" data-aos-duration="800">
+                <div class="mobile-view">
+
+                    <form onSubmit="return checkform(this)">
+                        <div class="contacts_first-row">
+                            <div class="inputs_row"> Name*<input type="text" name="Name" id="name" required></div>
+                            <div class="inputs_row"> Phone number*<input type="text" name="number" id="number" required>
+                            </div>
+                            <div class="inputs_row"> E-mail*<input type="email" name="email" id="email" required></div>
+                        </div>
+                        <div class="inputs_row next_row">Comments <textarea type="text" name="comments"
+                                id="comment"></textarea></div>
+                        <div class="inputs_row next_row" data-aos="fade-up"> <input type="submit" value="Send" x></div>
+                    </form>
+
+                </div>
+
+            </div>
+
+
+
+            <div class=" poster_block_right ">
+                <div class="contact-details" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="contact-column">
+                        <div class="contact-icon"><img src="./src/img/location.svg" alt="Dr.Wise_location"></div>
+                        <div class="contact-info">
+                            <p class="contact-title">Office address:</p>
+                            <p class="contact-txt">Ankara Teknopark TGB Yerleşkesi
+                                2224. Cadde No:1/C-1114
+                                06378 İvedik - Yenimahalle / ANKARA</p>
+                        </div>
+                    </div>
+                    <div class="contact-column">
+                        <div class="contact-icon"><img src="./src/img/phone.svg" alt="Dr.Wise_location"></div>
+                        <div class="contact-info">
+                            <p class="contact-title">Phone number:</p>
+                            <a href="tel:903122841370" class="contact-txt">+90 312 2841370</a>
+                        </div>
+                    </div>
+                    <div class="contact-column">
+                        <div class="contact-icon"><img src="./src/img/email.svg" alt="Dr.Wise_location"></div>
+                        <div class="contact-info">
+                            <p class="contact-title">E-mail address:</p>
+                            <a href="email:email@email.com" class="contact-txt">email@email.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------- ABOUT DrWise body END ----------- -->
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="common-container">
+            <div class="footer-container">
+                <div>
+                    <div class="footer-logo">
+                        <img src="./src/img/logo.svg" alt="" />
+                        <p class="footer-logo-title">The new way of health care</p>
+                        <div class="footer-social-icons">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-lists">
+                    <ul>
+                        <li>Menu</li>
+                        <li><a href="#benefits"> Why Dr.Wise?</a></li>
+                        <li><a href="./FAQ.html"> FAQ</a></li>
+                        <li><a href="./Professionals.html"> Our Health Professionals</a></li>
+                    </ul>
+                    <ul>
+                        <li>About us</li>
+
+                        <li><a href="./About_DrWise.html">About Dr.Wise</a></li>
+
+                        <li> <a href="./About_Dekob.html">About Dekob</a> </li>
+                        <li> <a href="./Contact_us.html"> Contact Us</a></li>
+                        <li><a href="./privacy_policy.html"> Our Privacy Policy</a></li>
+                        <li><a href="./terms_of_use.html">Terms of Use</a> </li>
+                    </ul>
+                    <ul class="mob-list">
+                        <li>Health Professionals</li>
+                        <li><a href="#"> To became a consultant </a></li>
+                        <li>
+                            <a class="make-text-red" href="for_professional.html">For Health Professionals</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-buttons">
+                    <a href="#"><img src="./src/footer/google.svg" style="width: 58%" alt="" /></a>
+                    <a href="#"><img src="./src/footer/app.svg" style="width: 58%" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
+
+</html>

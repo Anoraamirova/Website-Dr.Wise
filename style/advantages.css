@@ -1,0 +1,383 @@
+.padding-header {
+  padding-top: 90px;
+}
+
+.advantages {
+  margin-top: 120px;
+}
+
+.advantages .poster_block {
+  max-height: 385px;
+  padding: 0;
+}
+
+.advantages .poster_block .poster_block_content {
+  align-items: center;
+  width: 70%;
+}
+
+.advantage-banner-txt {
+  font-size: 70px;
+  line-height: 95px;
+}
+
+.poster-center-txt h4 {
+  font-size: 26px;
+  line-height: 40px;
+  color: #3b3b3b;
+  margin-top: 30px;
+}
+
+.poster-center-txt p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 0;
+  margin-top: 18px;
+  color: #5f5f5f;
+  max-width: 300px;
+}
+
+.three-cards {
+  width: auto;
+  max-width: 1509px;
+
+  margin: 120px auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 220px;
+}
+
+
+.adv-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adv-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.circle-num {
+  width: 57px;
+  height: 57px;
+  display: flex;
+  z-index: 1;
+  border-radius: 100%;
+  background: #00ACDE;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.oval {
+  width: 483px;
+  height: 208px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  margin-top: -27px;
+  box-shadow: 0px 20px 40px rgba(193, 193, 193, 0.25);
+  border-radius: 500px;
+}
+
+.oval .card-txt-block {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  max-width: 280px;
+}
+
+.oval .card-txt {
+  line-height: 30px;
+  max-width: 280px;
+  font-weight: 400;
+}
+
+.oval-txt {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #00ACDE;
+}
+
+.adv-row {
+  display: flex;
+  height: 622px;
+
+}
+
+.adv-row .poster_block {
+  width: 55%;
+  min-height: 350px;
+  justify-content: center;
+}
+
+.adv-row .poster_block .poster_block_content {
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.adv-row .poster_block .poster_block_content .phone_mockup-screen {
+  margin-bottom: 170px;
+}
+
+.white {
+  width: 67% !important;
+  z-index: 2;
+  position: absolute;
+  margin-top: -100px;
+  background-color: #fff;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 40px rgba(217, 217, 217, 0.25);
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.gray {
+  position: absolute;
+  border-radius: 500px 0px 0px 500px;
+  margin-right: -2.5%;
+}
+
+.adv-row .gray .poster_block_content {
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.adv-row .poster-center-txt {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 48px;
+  color: #515151;
+  max-width: 700px;
+}
+
+.blue-oval {
+  width: 80%;
+  max-height: 572px;
+  margin: 0 auto;
+  background: #00ADE1;
+  border-radius: 500px;
+  padding: 31px 0;
+}
+
+.poster_block_content {
+  width: 75%;
+  justify-content: space-evenly;
+}
+
+.blue-oval .slogan_part .slogan h1 {
+  color: #fff;
+}
+
+.show-btn {
+  display: none
+}
+
+@media screen and (max-width:1450px) {
+  .advantages .slogan_part .slogan h1 {
+    font-size: 46px;
+    line-height: 65px;
+  }
+
+  .advantages .poster_block {
+    max-height: 350px;
+  }
+
+  .advantages .poster_block .poster_block_content {
+    width: 85%;
+  }
+
+  .advantages .phone_mockup-screen img {
+    max-height: 400px;
+  }
+
+  .advantages .download_button {
+    padding: 0 15px;
+  }
+
+  .three-cards {
+    flex-direction: column;
+  }
+
+  .adv-card:not(:last-child) {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media screen and (max-width:1025px) {
+  .advantages {
+    margin-top: 40px;
+  }
+
+  .advantages .slogan_part .slogan h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
+
+
+  .advantages .poster-center-txt,
+  .advantages .poster-center-txt p {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .advantages .poster-center-txt h4 {
+    margin-top: 0;
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .advantages .poster-main {
+    width: 97% !important;
+  }
+
+  .advantages .poster-main .poster_block_content {
+    padding-left: 10%;
+  }
+
+  .advantages .phone_mockup-screen img {
+    margin-bottom: -48px;
+    max-height: 205px;
+  }
+
+  .three-cards {
+    margin-top: 70px;
+    margin-bottom: 0;
+  }
+
+  .three-cards .oval {
+    width: 320px;
+    height: 162px;
+  }
+
+  .oval .card-txt-block {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 400;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .adv-row {
+    max-width: -webkit-fill-available;
+    max-height: 420px;
+    flex-direction: column-reverse;
+    padding-bottom: 30px;
+  }
+
+  .not-reverse {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .advantages .not-reverse .white {
+    margin-right: auto;
+  }
+
+  .advantages .poster_block {
+    width: 70%;
+  }
+
+  .advantages .white {
+    width: 85%;
+    position: unset;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    width: auto !important;
+  }
+
+  .advantages .poster_block,
+  .advantages .poster_block_right {
+    min-height: auto;
+    max-width: auto;
+  }
+
+  .adv-row .mobile-left {
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 30px;
+    max-width: 290px;
+  }
+
+  .right {
+    right: auto;
+    margin-left: 0;
+  }
+
+  .adv-row .poster_block .poster_block_content .phone_mockup-screen {
+    margin-bottom: 0;
+  }
+
+  .gray {
+    position: unset;
+  }
+
+  .blue-oval {
+    border-radius: 40px;
+  }
+
+  .advantages .blue-oval {
+    width: 95%;
+    margin-top: 40px;
+  }
+
+  .advantages .slogan_part .slogan h1 {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .blue-oval .download_button img {
+    height: 40px;
+  }
+
+  .blue-oval .logo-name {
+    margin-top: 60px;
+  }
+
+  .advantages .download_button {
+    padding: 0 25px;
+  }
+
+  .show-btn {
+    width: 154px;
+    height: 50px;
+    border-radius: 40px 40px 40px 0px;
+    background: #FF6969;
+    color: white;
+    font-weight: bold;
+    margin: 60px auto;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+  }
+
+  #show-hide {
+    -moz-transition: opacity .25s ease-in-out, top .25s ease-in-out;
+    -o-transition: opacity .25s ease-in-out, top .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out, top .25s ease-in-out;
+    transition: opacity .25s ease-in-out, top .25s ease-in-out;
+  }
+}

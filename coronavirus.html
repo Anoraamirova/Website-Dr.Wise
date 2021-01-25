@@ -1,0 +1,460 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr.Wise Coronavirus</title>
+    <script src="./js/toggleClass.js"></script>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/About.css" />
+    <link rel="stylesheet" href="./style/contact_us.css" />
+    <link rel="stylesheet" href="./style/FAQ.css" />
+    <link rel="stylesheet" href="./style/corona.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="shortcut icon" href="./src/img/Group.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav class="navbar-outer-container">
+        <div class="hamburger-btn" onclick="toggleFunction(event)">
+          <i class="fas fa-bars openBurger"></i
+          ><i class="fas fa-times closeBurger"></i>
+        </div>
+        <div class="nav-logo">
+          <a href="index.html"
+            ><img src="./src/img/logo.svg" alt="logo" style="width: 80%"
+          /></a>
+        </div>
+    
+        <div class="nav-links-for-large-devices">
+          <span class="why-drwise-dropbtn"
+            ><a href="#"
+              >Why Dr.Wise <i class="fas fa-chevron-down down-red-i"></i
+              ><i class="fas fa-chevron-up up-red-i"></i
+            ></a>
+            <div class="why-drwise-dropdown">
+              <a href="./index.html#benefits">Benefits</a>
+              <a href="./index.html#how_it_works">How it works</a>
+              <a href="./index.html#services">Services</a>
+              <a href="./for_professional.html">For Professionals</a>
+            </div>
+          </span>
+          <span><a href="./FAQ.html">FAQ</a></span>
+          <span><a href="./Professionals.html">Health Professionals</a></span>
+          <span class="lang-dropbtn">
+            <button class="lang-btn">
+              EN <i class="fas fa-chevron-down down-white-i"></i
+              ><i class="fas fa-chevron-up up-white-i"></i>
+            </button>
+            <div class="lang-dropdown">
+              <a href="#">EN</a>
+              <a href="#">RU</a>
+            </div>
+          </span>
+        </div>
+    
+        <div class="nav-links-for-small-devices">
+          <span class="nav-modal-buttons" id="hover-modal-btns">
+            <button class="login-modal-btn" onclick="loginModalFunc()">
+              Login
+            </button>
+            <button class="sign-up-modal-btn" onclick="SignUpModalFunc()">
+              Sign Up <i class="fas fa-chevron-down down-white-i"></i>
+            </button>
+          </span>
+    
+          <div class="modal" id="LoginModal">
+            <div class="login-modal-content">
+              <span class="close-login-modal" onclick="closeLogin()"
+                >&times;</span
+              >
+              <form class="nav-login-form" autocomplete="off">
+                <label for="nav-login">Enter your login:</label>
+                <input type="text" id="nav-login" name="login" />
+                <label for="nav-login-password">Enter your password:</label>
+                <input
+                  type="password"
+                  id="nav-login-password"
+                  name="password"
+                />
+                <button class="login-btn-sign-in">Sign in</button>
+              </form>
+            </div>
+          </div>
+    
+          <div class="modal" id="SignUpModal">
+            <div class="signUp-modal-content">
+              <span class="close-login-modal" onclick="closeSignUp()"
+                >&times;</span
+              >
+              <a href="#">As Patient</a>
+              <a href="#">As Health Professional</a>
+            </div>
+          </div>
+    
+          <a href="#">Why Dr.Wise</a>
+          <div class="nav-inline-links">
+            <a href="./index.html#benefits">Benefits</a>
+            <a href="./index.html#how_it_works">How it works</a>
+            <a href="./index.html#services">Services</a>
+            <a href="Professionals.html">For Professionals</a>
+          </div>
+          <a href="./FAQ.html">FAQ</a>
+          <a href="./for_professional.html">Health Professionals</a>
+          <span>
+            <button class="lang-modal-btn" onclick="langModalFunc()">
+              EN <i class="fas fa-chevron-down down-white-i"></i>
+            </button>
+            <div class="modal" id="langModal">
+              <div class="lang-modal-content">
+                <span class="close-lang-modal" onclick="closeLang()"
+                  >&times;</span
+                >
+                <a href="#">EN</a>
+                <a href="#">RU</a>
+              </div>
+            </div>
+          </span>
+        </div>
+    
+        <div class="nav-buttons" id="hover-btns">
+          <span class="login-dropbtn">
+            <button onmouseover="hoverColor1()">Login</button>
+            <div class="login-dropdown">
+              <form class="nav-login-form" autocomplete="off">
+                <label for="nav-login">Enter your login:</label>
+                <input type="text" id="nav-login" name="login" />
+                <label for="nav-login-password">Enter your password:</label>
+                <input
+                  type="password"
+                  id="nav-login-password"
+                  name="password"
+                />
+                <button class="login-btn-sign-in">Sign in</button>
+              </form>
+            </div>
+          </span>
+          <span class="sign-up-dropbtn">
+            <button onmouseover="hoverColor2()">
+              Sign Up <i class="fas fa-chevron-down down-white-i"></i
+              ><i class="fas fa-chevron-up up-white-i"></i>
+            </button>
+            <div class="sign-up-dropdown">
+              <a href="#">As Patient</a>
+              <a href="#">As Health Professional</a>
+            </div>
+          </span>
+        </div>
+      </nav>
+    <!-- ----------- Header END --------- -->
+    <div class="container bottom-margin">
+        <div class="header-down-container">
+            <div class="corona_page">
+                <div class="breadcrumbs" data-aos="fade-right">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="coronavirus.html">Coronavirus Page</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="block_title" data-aos="zoom-in">
+                    <h1>How we help to fight with <span class="blue">CoVid 19</span> </h1>
+                </div>
+                <div class="first_poster" data-aos="fade-right" data-aos-duration="1000">
+                    <div> <img src="./src/corona/coronavirus 1.svg" alt="virus" class="corona-ico"></div>
+                    <div class="first_poster_content">
+                        <div class="update_date">Updated October 1st, 2020</div>
+                        <p>Coronavirus disease 2019 (COVID-19) is a respiratory illness that can spread from person to
+                            person. The virus that causes COVID-19 is a novel (new) coronavirus that was first
+                            identified
+                            during an investigation into an outbreak in Wuhan, China. <span class="bold">
+
+                                On March 11, the World Health
+                                Organization declared the rapidly spreading coronavirus outbreak a pandemic.</span>
+
+                        </p><br>
+                        <p>Symptoms associated with the virus are mild to severe fever, cough, and shortness of breath.
+                            <span class="bold">There is currently no vaccine to protect against COVID-19,
+                                and there is no specific antiviral treatment for the virus.</span></p>
+                        <br>
+                        <p>
+                            <span class="bold"> Dr Wise doctors are here to help. </span> If you have symptoms of the
+                            virus,
+                            our doctors can assess your
+                            condition and help determine the necessary next steps, all from the comfort of your home. If
+                            you
+                            are suffering from other common medical conditions, MDLIVE doctors provide reliable care
+                            while
+                            minimizing the exposure to contagious viruses like COVID-19.
+                        </p>
+                        <div class="link-row">
+                            <a href="#" class="see_btn">See a doctor</a>
+                            <a href="#" class="corona_links">Latest COVID-19 Information from the CDC</a>
+                            <a href="#" class="corona_links"> Coronavirus COVID-19 Global Cases by Johns Hopkins
+                            </a>
+                        </div>
+                    </div>
+                    <div><img src="./src/corona/Group 2829.svg" alt="virus" class="corona-ico-bottom"></div>
+                </div>
+                <div class="risk-row">
+                    <div class="left-risk-poster" data-aos="fade-right" data-aos-duration="1200">
+                        <div class="title"><span class="blue">Coronavirus risk </span>assessment</div>
+                        <p>Based on the latest guidelines from the Centers for Disease Control and Prevention (CDC),
+                            <span class="bold">we’ve
+                                prepared an assessment to help you understand your Coronavirus risk based on symptoms
+                                and
+                                other
+                                factors.</span>
+                            If you are experiencing chest pain, severe shortness of breath or any other emergency
+                            condition,
+                            do not take this assessment. Call 911 for immediate attention.
+                            <br>
+                            Due to current limitations in specimen collection, our providers cannot currently order
+                            tests
+                            for COVID-19 (Coronavirus). <span class="bold"> We will not keep or store any of the answers
+                                from this assessment.</span>
+                        </p>
+                        <a href="#" class="see_btn">
+                            Start assessment
+                        </a>
+                    </div>
+                    <div class="right-risk-poster" data-aos="fade-right" data-aos-duration="1200">
+                        <img src="./src/corona/app.svg" alt="screen">
+                    </div>
+                </div>
+                <div class="block_title" data-aos="zoom-in" data-aos-duration="1000">
+                    <h1>
+                        Dr. Wise CoVid - 19<br>
+                        <span class="blue">
+                            dignosis and treatment</span></h1>
+                </div>
+                <div class="treat-row">
+                    <div class="left-img" data-aos="fade-right" data-aos-duration="1400">
+                        <img src="./src/corona/image 2.png" alt="drLady">
+                    </div>
+                    <div class="right-blocks">
+                        <div class="check-column" data-aos="fade-right" data-aos-duration="1200">
+                            <img src="./src/corona/green-check.svg" alt="check">
+                            <div class="title">What to expect</div>
+                            <div class="what-can">Your <span class="blue">Dr. Wise</span> provider can:</div>
+                            <div class="main-list">
+                                <ul>
+                                    <li>Assess likelihood of COVID-19 based on your symptoms and other risk factors
+                                    </li>
+                                    <li> Advise to you:
+                                        <div class="inside-list">
+                                            <ul>
+                                                <li>Self-quarantine according to the latest CDC guidelines
+                                                </li>
+                                                <li>Pursue COVID-19 testing via an in-person care setting
+                                                </li>
+                                                <li>Go to an emergency department
+                                                    if symptoms are severe, and help coordinate with your local
+                                                    emergency
+                                                    department if necessary
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>Discuss signs and symptoms of coronavirus</li>
+                                    <li>Write a note excusing you from school or work for up to 14 days</li>
+                                    <li>Diagnose and treat more than 80 common conditions, reducing the need
+                                        for in-person care</li>
+                                    <li>Write 90-day prescription refills for chronic conditions (temporarily increased
+                                        from
+                                        30 days)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="check-column" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="./src/corona/red-no.svg" alt="check">
+                            <div class="title">What <span class="blue">not to expect</span></div>
+                            <div class="what-can">Your <span class="blue">Dr. Wise</span> provider cannot:</div>
+                            <div class="main-list no-list">
+                                <ul>
+                                    <li> Order tests for COVID-19 </li>
+                                    <li>Treat COVID-19 cases with anti-viral medication</li>
+                                    <li>Provide a note that clears you to return
+                                        to work</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions-row" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="faq-block">
+                        <div class="block_title">
+                            <h1>Coronavirus desease
+                                <span class="blue"> <br>(covid-19)</span></h1>
+                            <h4>Frequently asked questions (FAQ)</h4>
+                        </div>
+                        <div class="questions-block">
+                            <details>
+                                <summary>
+                                    <span class="question-num">01</span>
+                                    <div class="question">Nasıl yeni bir soru
+                                        ekleyebilirim? </div>
+                                </summary>
+                                <p>Yeni bir soru eklemek için uygulama ayarlarına gidin ve 'Soruları Yönet' düğmesine
+                                    tıklayın.</p>
+                            </details>
+                            <details>
+                                <summary>
+                                    <span class="question-num">02</span>
+                                    <div class="question">Nasıl yeni bir soru
+                                        ekleyebilirim? </div>
+                                </summary>
+                                <p>Yeni bir soru eklemek için uygulama ayarlarına gidin ve 'Soruları Yönet' düğmesine
+                                    tıklayın.</p>
+                            </details>
+                            <details>
+                                <summary>
+                                    <span class="question-num">03</span>
+                                    <div class="question">Nasıl yeni bir soru
+                                        ekleyebilirim? </div>
+                                </summary>
+                                <p>Yeni bir soru eklemek için uygulama ayarlarına gidin ve 'Soruları Yönet' düğmesine
+                                    tıklayın.</p>
+                            </details>
+                            <details>
+                                <summary>
+                                    <span class="question-num">04</span>
+                                    <div class="question">Nasıl yeni bir soru
+                                        ekleyebilirim? </div>
+                                </summary>
+                                <p>Yeni bir soru eklemek için uygulama ayarlarına gidin ve 'Soruları Yönet' düğmesine
+                                    tıklayın.</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="mental-health-row">
+                    <div class="first_poster" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="first_poster_content">
+                            <img src="./src/corona/mental-health.svg" alt="MentalHealth">
+                            <div class="poster-title">Mental health during <span class="blue">the coronavirus outbreak
+                                </span>
+                            </div>
+                            <p>Worry, stress, and anxiety are expected, given the current conditions surrounding the
+                                coronavirus. <span class="bold">Everyone handles these and their other emotions and
+                                    responses
+                                    differently.</span>
+
+                            </p><br>
+                            <p> <span class="bold"> Dr.Wise is ready to listen and support you and your family during
+                                    this
+                                    challenging time. </span>Our
+                                board-certified psychiatrists and licensed therapists can help you process the
+                                information
+                                as it
+                                develops, create strategies to manage your concerns, identify healthy activities, and
+                                put
+                                together a plan tailored to your unique situation and needs.
+                            </p>
+                            <br>
+                            <p>
+                                Now, more than ever, is a great time to focus on what you can control and your overall
+                                well-being. <span class="bold">Schedule a private, confidential visit and keep both
+                                    mentally
+                                    and
+                                    physically healthy
+                                    with Dr.Wise. </span> </p>
+                            <div class="link-row">
+                                <a href="#" class="see_btn">Schedule a visit</a>
+                            </div>
+                        </div>
+                        <div><img src="./src/corona/coronavirus 1.svg" alt="virus" class="corona-ico-bottom"></div>
+                    </div>
+                </div>
+                <div class="sign-row">
+                    <div class="blue-oval">
+                        <div class="poster_block_content">
+                            <div class="sign_part" data-aos="fade-right" data-aos-duration="1000">
+                                <div class="sign-up">
+                                    <h3>Sign up
+                                        a free account</h3>
+                                    <a href="#">
+                                        <div class="see_btn">Register</div>
+                                    </a>
+                                </div>
+                                <div class="sign-in">
+                                    <h3>Already
+                                        a member</h3>
+                                    <a href="#">
+                                        <div class="see_btn start-btn ">Start your visit</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="mockup_part " data-aos="fade-right" data-aos-duration="1000">
+                                <div class="phone_mockup-screen">
+                                    <img src="./src/corona/app-mockup.png" alt="Dr.Wise_screen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="common-container">
+            <div class="footer-container">
+                <div>
+                    <div class="footer-logo">
+                        <img src="./src/img/logo.svg" alt="" />
+                        <p class="footer-logo-title">The new way of health care</p>
+                        <div class="footer-social-icons">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-lists">
+                    <ul>
+                        <li>Menu</li>
+                        <li><a href="#benefits"> Why Dr.Wise?</a></li>
+                        <li><a href="./FAQ.html"> FAQ</a></li>
+                        <li><a href="./Professionals.html"> Our Health Professionals</a></li>
+                    </ul>
+                    <ul>
+                        <li>About us</li>
+
+                        <li><a href="./About_DrWise.html">About Dr.Wise</a></li>
+
+                        <li> <a href="./About_Dekob.html">About Dekob</a> </li>
+                        <li> <a href="./Contact_us.html"> Contact Us</a></li>
+                        <li><a href="./privacy_policy.html"> Our Privacy Policy</a></li>
+                        <li><a href="./terms_of_use.html">Terms of Use</a> </li>
+                    </ul>
+                    <ul class="mob-list">
+                        <li>Health Professionals</li>
+                        <li><a href="#"> To became a consultant </a></li>
+                        <li>
+                            <a class="make-text-red" href="for_professional.html">For Health Professionals</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-buttons">
+                    <a href="#"><img src="./src/footer/google.svg" style="width: 58%" alt="" /></a>
+                    <a href="#"><img src="./src/footer/app.svg" style="width: 58%" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
+
+</html>
