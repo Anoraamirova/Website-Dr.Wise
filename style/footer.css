@@ -11,6 +11,7 @@ footer {
   grid-template-rows: auto;
   justify-content: space-around;
   padding-top: 2%;
+  padding-left: 20px;
   padding-bottom: 20px;
 }
 
@@ -59,7 +60,7 @@ footer ul li:nth-child(1) {
   padding-top: 10%;
 }
 
-.footer-buttons > a {
+.footer-buttons>a {
   background: #000000;
   box-shadow: 0px 15px 35px rgba(185, 185, 185, 0.25);
   border-radius: 50px;
@@ -140,7 +141,7 @@ i:hover {
   color: #000;
 }
 
-.footer-logo > img {
+.footer-logo>img {
   box-sizing: border-box;
   margin-top: 8%;
   margin-bottom: 10%;
@@ -175,10 +176,10 @@ i:hover {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
     justify-content: start;
-    margin-left: 10px;
+    /* margin-left: 20px; */
   }
 
-  .footer-logo > img {
+  .footer-logo>img {
     margin-bottom: 30px;
   }
 
@@ -196,12 +197,12 @@ i:hover {
     justify-content: space-evenly;
   }
 
-  .footer-logo > img {
+  .footer-logo>img {
     height: 60px;
     margin-top: 0 !important;
   }
 
-  .footer-lists > ul {
+  .footer-lists>ul {
     padding-left: 0;
     max-width: fit-content;
   }
@@ -227,11 +228,15 @@ i:hover {
     justify-content: center;
   }
 
-  .footer-social-icons {
-    gap: 3%;
+  .footer-lists {
+    justify-content: flex-start;
   }
 
-  .footer-lists > ul {
+  .footer-social-icons {
+    gap: 19px;
+  }
+
+  .footer-lists>ul {
     padding-left: 0;
     max-width: 145px;
   }
@@ -246,7 +251,7 @@ i:hover {
     gap: 3%;
   }
 
-  .footer-lists > ul {
+  .footer-lists>ul {
     padding-left: 0;
   }
 }

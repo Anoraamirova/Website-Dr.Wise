@@ -381,3 +381,13 @@
     transition: opacity .25s ease-in-out, top .25s ease-in-out;
   }
 }
+
+@media screen and (max-width:359px) {
+  .three-cards .oval {
+    width: 280px;
+  }
+
+  .adv-row .mobile-left {
+    padding: 15px 20px;
+  }
+}

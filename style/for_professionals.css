@@ -46,9 +46,15 @@
     background: #FF6969;
     border-radius: 50px 0px 30px 50px;
     font-weight: bold;
+    cursor: pointer;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+}
+
+.for_professionals .sign_btn:hover {
+    box-shadow: 0px 10px 20px rgba(237, 75, 75, 0.2);
+    background: #E75656;
 }
 
 .prof-row {
@@ -418,7 +424,7 @@
 
     .tm_items {
         flex-flow: wrap;
-        justify-content: flex-start;
+        justify-content: center;
         margin: 0 auto;
     }
 
@@ -468,4 +474,14 @@
         padding-left: 0 !important;
     }
 
+}
+
+@media screen and (max-width:500px) {
+    .tm_items {
+        justify-content: space-between;
+    }
+
+    .for_professionals .benefits-card img {
+        bottom: 45%;
+    }
 }

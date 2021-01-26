@@ -64,18 +64,18 @@ body {
   border-radius: 50px;
 }
 
-.nav-links-for-large-devices > span {
+.nav-links-for-large-devices>span {
   height: 65px;
   text-align: center;
   padding-top: 22px;
   box-sizing: border-box;
 }
 
-.nav-links-for-large-devices > span:hover {
+.nav-links-for-large-devices>span:hover {
   border-bottom: 2px solid #ff6969;
 }
 
-.nav-links-for-large-devices > span > a {
+.nav-links-for-large-devices>span>a {
   text-decoration: none;
   font-family: Geometria;
   font-style: normal;
@@ -136,7 +136,7 @@ body {
   border-radius: 1px;
 }
 
-.lang-dropdown > a {
+.lang-dropdown>a {
   height: 43px;
   font-family: Geometria;
   font-style: normal;
@@ -150,7 +150,7 @@ body {
   border-radius: 5px;
 }
 
-.lang-dropdown > a:hover {
+.lang-dropdown>a:hover {
   background-color: #ff6969;
 }
 
@@ -168,6 +168,7 @@ body {
 .lang-dropbtn:hover .down-white-i::before {
   display: none;
 }
+
 i:hover {
   background: transparent !important;
 }
@@ -184,14 +185,14 @@ i:hover {
   justify-content: center;
 }
 
-.nav-buttons > span {
+.nav-buttons>span {
   height: 65px;
   border-radius: 50px;
   width: 50%;
   position: relative;
 }
 
-.nav-buttons > span:nth-child(1) > button {
+.nav-buttons>span:nth-child(1)>button {
   width: 100%;
   background: #00acde;
   height: 65px;
@@ -207,7 +208,7 @@ i:hover {
   cursor: pointer;
 }
 
-.nav-buttons > span:nth-child(2) > button {
+.nav-buttons>span:nth-child(2)>button {
   width: 100%;
   background: #ff6969;
   height: 65px;
@@ -336,7 +337,7 @@ i:hover {
   border-radius: 1px;
 }
 
-.sign-up-dropdown > a {
+.sign-up-dropdown>a {
   height: 50%;
   font-family: Geometria;
   font-style: normal;
@@ -351,7 +352,7 @@ i:hover {
   padding: 8px 10px;
 }
 
-.sign-up-dropdown > a:hover {
+.sign-up-dropdown>a:hover {
   background-color: #ff6969;
 }
 
@@ -403,7 +404,7 @@ i:hover {
   border-radius: 1px;
 }
 
-.why-drwise-dropdown > a {
+.why-drwise-dropdown>a {
   height: 34px;
   text-decoration: none;
   font-family: Geometria;
@@ -415,7 +416,7 @@ i:hover {
   padding: 8px 10px;
 }
 
-.why-drwise-dropdown > a:hover {
+.why-drwise-dropdown>a:hover {
   background-color: #ff6969;
   border-radius: 5px;
 }
@@ -443,7 +444,7 @@ i:hover {
   align-items: center;
 }
 
-.nav-links-for-small-devices > a {
+.nav-links-for-small-devices>a {
   text-decoration: none;
   font-family: Geometria;
   font-style: normal;
@@ -459,9 +460,10 @@ i:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 8px;
+  row-gap: 15px;
 }
-.nav-inline-links > a {
+
+.nav-inline-links>a {
   text-decoration: none;
   font-family: Geometria;
   font-style: normal;
@@ -472,7 +474,7 @@ i:hover {
   color: #393939;
 }
 
-.nav-inline-links > a:hover {
+.nav-inline-links>a:hover {
   font-weight: bold;
 }
 
@@ -560,7 +562,7 @@ i:hover {
   font-weight: bold;
 }
 
-.lang-modal-content > a {
+.lang-modal-content>a {
   height: 40px;
   font-family: Geometria;
   font-style: normal;
@@ -576,21 +578,22 @@ i:hover {
   cursor: pointer;
 }
 
-.lang-modal-content > a:hover {
+.lang-modal-content>a:hover {
   background-color: #ff6969;
 }
 
 .login-modal-content {
   margin: auto;
-  max-width: 240px;
-  height: 245px;
+  max-width: 290px;
+  height: 260px;
   background: #ff6969;
   padding: 10px;
   text-align: center;
 }
 
 .login-modal-content input {
-  max-width: 230px !important;
+  max-width: 265px !important;
+  margin: 0 auto;
 }
 
 .close-login-modal {
@@ -601,7 +604,7 @@ i:hover {
 }
 
 .signUp-modal-content {
-  width: 173px;
+  width: 180px;
   height: auto;
   background: #00acde;
   box-shadow: 0px 10px 20px rgba(180, 180, 180, 0.2);
@@ -614,7 +617,7 @@ i:hover {
   margin: auto;
 }
 
-.signUp-modal-content > a {
+.signUp-modal-content>a {
   font-family: Geometria;
   font-style: normal;
   font-weight: normal;
@@ -630,7 +633,7 @@ i:hover {
   padding: 8px 10px;
 }
 
-.signUp-modal-content > a:hover {
+.signUp-modal-content>a:hover {
   background: #ff6969;
 }
 
@@ -657,17 +660,20 @@ i:hover {
   background: #e75656;
 }
 
-.hamburger-btn > i:hover {
+.hamburger-btn>i:hover {
   background: transparent;
 }
+
 @media screen and (max-width: 1125px) and (min-width: 1041px) {
   .nav-links-for-large-devices {
     padding-left: 5%;
   }
+
   .navbar-outer-container {
     grid-template-columns: 20% 58% 20%;
   }
 }
+
 @media screen and (max-width: 1040px) {
   .nav-links-for-large-devices {
     display: none;
