@@ -319,6 +319,7 @@ body {
   transition: all .5s ease;
   position: relative;
   font-size: 14px;
+  z-index: 1;
   color: #474747;
   height: 65px;
   text-align: left
@@ -362,9 +363,6 @@ body {
   content: "";
 }
 
-.dropdown-s:active {
-  background-color: #f8f8f8
-}
 
 .dropdown-s.active:hover,
 .dropdown-s.active {
