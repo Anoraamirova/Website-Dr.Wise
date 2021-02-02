@@ -396,7 +396,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-
+  font-family: Gotham Pro;
   color: #575757;
   padding: 10px 30px;
   transition: all .2s ease-in-out;
@@ -552,7 +552,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-
+  font-family: Gotham Pro;
   color: #fff;
   padding: 10px 30px;
   transition: all .2s ease-in-out;
