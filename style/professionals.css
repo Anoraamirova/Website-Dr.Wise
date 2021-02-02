@@ -220,7 +220,7 @@ body {
 .prof-inner-container {
   width: 80%;
   margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 10px;
 }
 
 .header-form-container {
@@ -273,8 +273,8 @@ body {
 }
 
 .search-form>button {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border: none;
   border-radius: 50%;
   background-color: #00acde;
@@ -432,6 +432,14 @@ body {
   margin-right: 30px;
   -webkit-appearance: none;
   padding-left: 30px;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-image: url('../src/select/blue.svg');
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position: 98% 50%;
+
 }
 
 .select-arrow {
@@ -739,6 +747,14 @@ body {
   color: #ffffff;
   padding-left: 30px;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 30px;
+  cursor: pointer;
+  background-image: url('../src/select/white.svg');
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position: 98% 50%;
 }
 
 /* -------pagnination----- */
@@ -1047,7 +1063,7 @@ body {
   .main-order,
   .main-select,
   .select-form-span {
-    height: 50px;
+    height: 65px;
   }
 
   .select-form>button {
@@ -1096,8 +1112,8 @@ body {
   .order-arrow,
   .search-form>button,
   .select-arrow {
-    height: 46px;
-    width: 46px;
+    height: 55px;
+    width: 55px;
     top: 2px;
   }
 
