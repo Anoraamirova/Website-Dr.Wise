@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="./style/professionals.css" />
-  <link rel="stylesheet" href="./style/navbar.css" />
+  <!-- <link rel="stylesheet" href="./style/main.css" /> -->
   <link rel="stylesheet" href="./style/navbar.css" />
   <link rel="stylesheet" href="./style/footer.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -131,7 +131,7 @@
       </span>
     </div>
   </nav>
-  <div class="header-down-container-profs container">
+  <div class="header-down-container-profs ">
     <div class="breadcrumbs" data-aos="fade-right">
       <ul>
         <li>
@@ -154,13 +154,17 @@
             <input type="text" placeholder="Search" name="search" />
             <button type="submit"><i class="fas fa-search"></i></button>
           </form>
+          <div class="dropdown-s">
+            <div class="select">
+              <span>Select Proficiency</span>
+            </div>
+            <input type="hidden" name="gender">
+            <ul class="dropdown-menu">
+              <li>Pediatry</li>
+              <li>Dentist</li>
+            </ul>
+          </div>
           <form class="select-form">
-            <span class="select-form-span">
-              <span class="select-arrow proficiency"><i class="fas fa-chevron-down"></i></span>
-              <select class="main-select">
-                <option>Select Proficiency</option>
-              </select>
-            </span>
             <button type="submit">Search</button>
           </form>
         </div>
@@ -169,14 +173,16 @@
 
     <div class="common-prof-container">
       <div class="order-container">
-        <form class="order-form" data-aos="fade-right" data-aos-duration="1000">
-          <span class="order-form-span">
-            <span class="order-arrow"><i class="fas fa-chevron-down"></i></span>
-            <select class="main-order">
-              <option>Order by</option>
-            </select>
-          </span>
-        </form>
+        <div class="dropdown-o">
+          <div class="select">
+            <span>Order by</span>
+          </div>
+          <input type="hidden" name="gender">
+          <ul class="dropdown-menu">
+            <li>Rating</li>
+            <li>Price</li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -544,3 +550,259 @@
 </body>
 
 </html>
+
+<!-- <style>
+  /*Styling Selectbox*/
+  .dropdown-s {
+    width: 45%;
+    margin-left: 25px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 14px;
+    color: #474747;
+    height: 65px;
+    text-align: left
+  }
+
+  .dropdown-s .select {
+    cursor: pointer;
+    display: block;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 10;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #575757;
+  }
+
+  .dropdown-s .select>i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+  }
+
+  .dropdown-s .select span::after {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    transition: all .3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    background: url(../src/img/select-arrow.svg) no-repeat;
+    background-size: contain;
+    content: "";
+  }
+
+  .dropdown-s:active {
+    background-color: #f8f8f8
+  }
+
+  .dropdown-s.active:hover,
+  .dropdown-s.active {
+    border-radius: 50px;
+  }
+
+  .dropdown-s.active .select>span::after {
+    transform: rotate(180deg)
+  }
+
+  .dropdown-s .dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    top: 30px;
+    padding-top: 35px !important;
+    margin-top: 1px;
+    border-radius: 15px;
+    margin-top: 1px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+  }
+
+  .dropdown-s .dropdown-menu li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #575757;
+    padding: 10px 30px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+  }
+
+  .dropdown-s .dropdown-menu {
+    padding: 0;
+    list-style: none
+  }
+
+  .dropdown-s .dropdown-menu li:hover {
+    background-color: #f2f2f2
+  }
+
+  .dropdown-s .dropdown-menu li:active {
+    background-color: #e2e2e2
+  }
+
+  .main-select {
+    width: 100%;
+    height: 65px;
+    background: #ffffff;
+    border-radius: 150px;
+    outline: none;
+    border: none;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #575757;
+    margin-right: 30px;
+    -webkit-appearance: none;
+    padding-left: 30px;
+  }
+
+  .select-arrow {
+    width: 60px;
+    height: 60px;
+    background: #00acde;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+    right: 1%;
+    top: 5%;
+    cursor: pointer;
+  }
+
+  .select-form>button {
+    height: 65px;
+    width: 30%;
+    width: 175px;
+    background: #ff6969;
+    border-radius: 50px 0 50px 50px;
+    border: none;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+  }
+
+  /* ------------Order by select start---------- */
+  .dropdown-o {
+    width: 287px;
+    display: inline-block;
+    background-color: #00ACDE;
+    border-radius: 50px;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 14px;
+    color: #474747;
+    height: 65px;
+    text-align: left
+  }
+
+  .dropdown-o .select {
+    cursor: pointer;
+    display: block;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 10;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #fff;
+  }
+
+  .dropdown-o .select span::after {
+    position: absolute;
+    right: 2px;
+    top: 3px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    transition: all .3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    background: url(../src/img/order-arrow.svg) no-repeat;
+    background-size: contain;
+    content: "";
+  }
+
+
+  .dropdown-o.active:hover,
+  .dropdown-o.active {
+    border-radius: 50px;
+  }
+
+  .dropdown-o.active .select>span::after {
+    transform: rotate(180deg)
+  }
+
+  .dropdown-o .dropdown-menu {
+    position: absolute;
+    background-color: #00ACDE;
+    width: 100%;
+    left: 0;
+    top: 20px;
+    padding-top: 45px !important;
+    margin-top: 1px;
+    border-radius: 15px;
+    margin-top: 1px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+  }
+
+  .dropdown-o .dropdown-menu li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #fff;
+    padding: 10px 30px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+  }
+
+  .dropdown-o .dropdown-menu {
+    padding: 0;
+    list-style: none
+  }
+
+  .dropdown-o .dropdown-menu li:hover {
+    background-color: #ff6969
+  }
+
+  .dropdown-o .dropdown-menu li:active {
+    background-color: #ff6969
+  }
+
+  /* ------------Order by select  end---------- */
+</style> -->

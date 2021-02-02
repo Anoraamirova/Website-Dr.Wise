@@ -1,19 +1,19 @@
 @font-face {
-  font-family: Geometria;
-  src: url("/fonts/Geometria-Medium.woff");
+  font-family: Gotham Pro;
+  src: url("/fonts/Gotham Pro-Medium.woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Geometria;
-  src: url("/fonts/Geometria-Light.woff");
+  font-family: Gotham Pro;
+  src: url("/fonts/Gotham Pro-Light.woff");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: Geometria;
-  src: url("/fonts/Geometria-Bold.woff");
+  font-family: Gotham Pro;
+  src: url("/fonts/Gotham Pro-Bold.woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -47,6 +47,7 @@ body {
 
 .navbar-outer-container {
   margin: 20px;
+  width: 95%;
   display: grid;
   grid-template-columns: auto 60% 16%;
   justify-content: space-between;
@@ -77,7 +78,7 @@ body {
 
 .nav-links-for-large-devices>span>a {
   text-decoration: none;
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -138,7 +139,7 @@ body {
 
 .lang-dropdown>a {
   height: 43px;
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -199,7 +200,7 @@ i:hover {
   outline: none;
   border-radius: 50px;
   border: none;
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -215,7 +216,7 @@ i:hover {
   outline: none;
   border-radius: 50px;
   border: none;
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -230,15 +231,16 @@ i:hover {
   position: absolute;
   top: 200px;
   left: -200px;
-  width: 361px;
-  height: 231px;
+  width: auto;
+  height: auto;
   box-shadow: 0px 10px 20px rgba(180, 180, 180, 0.2);
   border-radius: 5px;
   background: #ff6969;
   text-align: center;
-  padding: 10px;
+  padding: 10px 15px;
   box-sizing: border-box;
   opacity: 0;
+  z-index: 11111;
   visibility: hidden;
   transition: all 650ms ease 0.5s;
 }
@@ -266,11 +268,10 @@ i:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 10px;
 }
 
 .nav-login-form label {
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -280,12 +281,12 @@ i:hover {
 }
 
 .nav-login-form input {
-  width: 325px;
+  width: 300px;
   height: 37px;
   background: #ffffff;
   border-radius: 5px;
   border: none;
-  margin-left: 8px;
+  margin: 10px auto 20px auto;
   outline: none;
 }
 
@@ -295,7 +296,7 @@ i:hover {
   border: none;
   background: #ffffff;
   border-radius: 50px 0px 50px 50px;
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: 450;
   font-size: 18px;
@@ -304,8 +305,16 @@ i:hover {
   color: #ff6969;
   margin: 0 auto;
   margin-top: 5px;
+  margin-bottom: 10px;
   cursor: pointer;
   outline: none;
+}
+
+.login-btn-sign-in:hover {
+  transition: 0.3s;
+  color: #fff;
+  background: #e75656;
+  box-shadow: 0px 10px 20px rgba(237, 75, 75, 0.2);
 }
 
 /* sign-up dropdown */
@@ -339,7 +348,7 @@ i:hover {
 
 .sign-up-dropdown>a {
   height: 50%;
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -407,7 +416,7 @@ i:hover {
 .why-drwise-dropdown>a {
   height: 34px;
   text-decoration: none;
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -439,17 +448,17 @@ i:hover {
 .nav-links-for-small-devices {
   display: none;
   flex-direction: column;
-  row-gap: 5px;
   justify-content: center;
   align-items: center;
 }
 
 .nav-links-for-small-devices>a {
   text-decoration: none;
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
+  margin-bottom: 5px;
   line-height: 50px;
   text-align: center;
   color: #393939;
@@ -460,12 +469,11 @@ i:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 15px;
 }
 
 .nav-inline-links>a {
   text-decoration: none;
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -518,7 +526,7 @@ i:hover {
   outline: none;
   border: none;
   background: #00acde;
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -534,7 +542,7 @@ i:hover {
   outline: none;
   border: none;
   background: #ff6969;
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -564,7 +572,7 @@ i:hover {
 
 .lang-modal-content>a {
   height: 40px;
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -584,7 +592,7 @@ i:hover {
 
 .login-modal-content {
   margin: auto;
-  max-width: 290px;
+  max-width: 300px;
   height: 260px;
   background: #ff6969;
   padding: 10px;
@@ -592,7 +600,7 @@ i:hover {
 }
 
 .login-modal-content input {
-  max-width: 265px !important;
+  width: 265px !important;
   margin: 0 auto;
 }
 
@@ -618,7 +626,7 @@ i:hover {
 }
 
 .signUp-modal-content>a {
-  font-family: Geometria;
+  font-family: Gotham Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -687,6 +695,10 @@ i:hover {
     display: flex;
   }
 
+  .nav-login-form input:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
   .closeBurger::before {
     display: none;
   }
@@ -701,11 +713,14 @@ i:hover {
     z-index: 111111;
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
-    row-gap: 20px;
     justify-content: center;
     align-items: center;
     background-color: white;
     transition: all 0.5s ease;
+  }
+
+  .nav-inline-links>a {
+    margin-bottom: 15px;
   }
 
   .nav-logo {
@@ -719,7 +734,7 @@ i:hover {
   }
 
   .navbar-responsive {
-    height: 550px;
+    height: 560px;
     box-shadow: 0px 15px 25px rgba(193, 193, 193, 0.35);
   }
 

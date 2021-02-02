@@ -54,6 +54,7 @@
     height: 65px;
     color: white;
     margin: 0 auto;
+    cursor: pointer;
     font-weight: 450;
     font-size: 20px;
     line-height: 26px;
@@ -72,7 +73,8 @@
     width: auto;
     height: 150px;
     overflow: auto;
-    resize: vertical;
+    resize: none;
+    padding-left: 20px;
     margin: 0;
     font-family: inherit;
     font-size: inherit;
