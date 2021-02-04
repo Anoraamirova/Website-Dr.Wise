@@ -378,6 +378,10 @@
 }
 
 @media screen and (max-width:1601px) {
+    .first_poster {
+        border-radius: 0px 200px 200px 200px;
+    }
+
     .poster_block_content {
         width: 80%;
     }
@@ -406,8 +410,8 @@
         width: 60%;
         margin-left: -2.5%;
         background: #F9F9F9;
-        border-radius: 0px 0px 400px 0px;
-        padding: 30px 30PX 30PX 5%;
+        border-radius: 0px 0px 150px 0px;
+        padding: 30px 30PX 50PX 5%;
     }
 
     .left-risk-poster p {
@@ -725,5 +729,11 @@
     .sign-row .start-btn,
     .sign-row .see-btn {
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .corona_page .block_title h1 {
+        margin-top: 40px;
     }
 }

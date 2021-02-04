@@ -2,11 +2,11 @@
 
 
 .faq-container {
-  margin-bottom: 120p;
+  margin-bottom: 120px;
 }
 
 .m_top {
-  margin-top: 120px;
+  margin-top: 90px;
 }
 
 .block_title h1,
@@ -203,6 +203,10 @@ h2 {
 
 
 @media screen and (max-width: 1600px) {
+  .poster_second {
+    border-radius: 150px 0px 0px 150px;
+  }
+
   .slogan_part .slogan h1 {
     font-size: 50px;
     line-height: 70px;
@@ -218,12 +222,21 @@ h2 {
     height: 50px;
   }
 
+  .download_button:not(:last-child) {
+    margin-right: 15px;
+  }
+
   .download_button img {
     height: 35px;
   }
 
   .poster_block p {
     font-size: 16px;
+  }
+
+  .poster_txt_big p {
+    width: 80%;
+    max-width: 900px;
   }
 
 }
@@ -233,6 +246,10 @@ h2 {
     font-size: 14px;
     line-height: 28px;
 
+  }
+
+  .poster_block_right {
+    border-radius: 100px 0px 0px 100px;
   }
 
   .poster_first {
@@ -278,6 +295,10 @@ h2 {
     padding: 0 25px;
     height: 60px;
     margin-bottom: 20px;
+  }
+
+  .download_button:not(:last-child) {
+    margin-right: unset;
   }
 
   .download_button img {
@@ -366,5 +387,15 @@ h2 {
 @media screen and (max-width:480px) {
   .phone_mockup-screen img {
     max-height: 220px;
+  }
+
+  .block_title_margin {
+    margin-top: 40px !important;
+  }
+
+  .poster_block p,
+  .poster_block_right p {
+    font-size: 14px;
+    line-height: 20px;
   }
 }

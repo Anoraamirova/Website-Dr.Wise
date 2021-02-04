@@ -186,9 +186,19 @@
   display: none
 }
 
+.advantages .download_button:not(:last-child) {
+  margin-right: 15px;
+}
+
+@media screen and (max-width:1800px) {
+  .blue-oval .slogan_part .slogan h1 {
+    font-size: 65px;
+  }
+}
+
 @media screen and (max-width:1450px) {
   .advantages .slogan_part .slogan h1 {
-    font-size: 46px;
+    font-size: 40px;
     line-height: 65px;
   }
 
@@ -201,11 +211,12 @@
   }
 
   .advantages .phone_mockup-screen img {
-    max-height: 400px;
+    max-height: 250px;
   }
 
   .advantages .download_button {
-    padding: 0 15px;
+    margin-right: 10px;
+    max-width: 100px;
   }
 
   .three-cards {
@@ -356,6 +367,8 @@
 
   .advantages .download_button {
     padding: 0 25px;
+    max-width: fit-content;
+    margin-right: 0;
   }
 
   .show-btn {

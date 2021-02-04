@@ -24,7 +24,7 @@
 
 .question-num {
   font-size: 20px;
-  line-height: 20px;
+  line-height: 28px;
   color: #00acde;
   margin-right: 12px;
 }
@@ -85,7 +85,7 @@ summary {
 summary .question {
   font-weight: 400;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 28px;
   color: #3c3c3c;
 }
 
@@ -141,9 +141,24 @@ details summary~p {
   }
 }
 
+@keyframes sweepout {
+  0% {
+    opacity: 1;
+    margin-left: 0px
+  }
+
+  100% {
+    opacity: 0;
+    margin-left: -10px
+  }
+}
+
 details[open] summary~* {
   animation: sweep 1s ease-in-out;
-  transition: 1s;
+}
+
+details:not([open]) summary~* {
+  animation: sweepout 1s ease-in-out;
 }
 
 summary:focus {

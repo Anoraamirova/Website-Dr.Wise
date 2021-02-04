@@ -1023,31 +1023,24 @@ h2 {
 
   .services-container {
     grid-template-columns: 400px 400px 400px 400px;
-    grid-template-rows: 170px 170px 170px 170px;
-    justify-content: space-between;
+    /* grid-template-rows: 170px 170px 170px 170px; */
+    justify-content: space-evenly;
     row-gap: 2%;
     margin-bottom: 8%;
   }
 }
 
 @media screen and (max-width: 1720px) {
-  .services-container {
-    grid-template-columns: 510px 510px;
-    grid-template-rows: 110px;
-    justify-content: center;
-    column-gap: 2%;
-    row-gap: 2%;
-    margin-bottom: 20%;
-  }
 
-  .services-container>div {
-    flex-direction: row;
-    justify-content: start;
-    padding-left: 2%;
+
+  .services-container {
+    grid-template-columns: 24% 24% 24% 24%;
   }
 
   .service-span-text {
     margin-left: 5%;
+    display: flex;
+    flex-direction: column;
   }
 
   .services-container>div>p {
@@ -1055,7 +1048,7 @@ h2 {
   }
 
   .health-prof-container {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .health-prof-container-item:nth-child(3) {
@@ -1065,7 +1058,7 @@ h2 {
 
 @media screen and (max-width: 1099px) {
   .services-container {
-    grid-template-columns: minmax(465px, 510px);
+    grid-template-columns: minmax(465px, 510px) !important;
     /* grid-template-rows: repeat(16, 110px); */
     justify-content: center;
     column-gap: 2%;
@@ -1104,9 +1097,29 @@ h2 {
 }
 
 @media screen and (max-width: 1400px) {
+
   /* .slideshou-container {
     grid-template-rows: 400px;
   } */
+  .services-container {
+    grid-template-columns: 510px 510px;
+    grid-template-rows: 110px;
+    justify-content: center;
+    column-gap: 2%;
+    row-gap: 2%;
+    margin-bottom: 20%;
+  }
+
+  .services-container>div {
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 2%;
+  }
+
+  .service-span-text {
+    margin-left: 5%;
+    display: block;
+  }
 
   .slideshou-item>h2 {
     font-size: 16px;
@@ -1227,9 +1240,9 @@ h2 {
     max-width: 170px;
   }
 
-  .banner {
+  /* .banner {
     height: 85vh;
-  }
+  } */
 
   .banner_txt {
     padding-top: 5%;
@@ -1703,7 +1716,7 @@ h2 {
   }
 
   .banner_txt {
-    padding-top: 0px;
+    padding-top: 20px;
   }
 }
 
@@ -1767,6 +1780,10 @@ h2 {
     padding-left: 30px;
     padding-right: 15px;
     line-height: 18px;
+  }
+
+  .mobile-benefits {
+    margin-top: -70px;
   }
 
 }
