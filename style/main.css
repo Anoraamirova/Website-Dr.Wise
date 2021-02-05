@@ -1081,7 +1081,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
   .services-container {
-    grid-template-columns: 320px;
+    grid-template-columns: 90% !important;
     grid-template-rows: 92px;
   }
 
@@ -1717,6 +1717,10 @@ h2 {
 
   .banner_txt {
     padding-top: 20px;
+  }
+
+  .prof-info {
+    left: 20px;
   }
 }
 
