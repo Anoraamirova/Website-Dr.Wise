@@ -1,503 +1,481 @@
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Terms of Use Dr.Wise</title>
-    <script src="./js/toggleClass.js"></script>
-    <link rel="stylesheet" href="./style/main.css" />
-    <link rel="stylesheet" href="./style/corona.css" />
-    <link rel="stylesheet" href="./style/contact_us.css" />
-    <link rel="stylesheet" href="./style/privacy-terms.css" />
-    <link rel="stylesheet" href="./style/navbar.css" />
-    <link rel="stylesheet" href="./style/footer.css" />
-    <link rel="shortcut icon" href="./src/img/Group.ico" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Terms of Use Dr.Wise</title>
+  <script src="./js/toggleClass.js"></script>
+  <link rel="stylesheet" href="./style/main.css" />
+  <link rel="stylesheet" href="./style/corona.css" />
+  <link rel="stylesheet" href="./style/contact_us.css" />
+  <link rel="stylesheet" href="./style/privacy-terms.css" />
+  <link rel="stylesheet" href="./style/navbar.css" />
+  <link rel="stylesheet" href="./style/footer.css" />
+  <link rel="shortcut icon" href="./src/img/Group.ico" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
 
-    <!-- ----------- Header START --------- -->
-    <nav class="navbar-outer-container">
-        <div class="hamburger-btn" onclick="toggleFunction(event)">
-          <i class="fas fa-bars openBurger"></i
-          ><i class="fas fa-times closeBurger"></i>
-        </div>
-        <div class="nav-logo">
-          <a href="index.html"
-            ><img src="./src/img/logo.svg" alt="logo" style="width: 80%"
-          /></a>
-        </div>
-    
-        <div class="nav-links-for-large-devices">
-          <span class="why-drwise-dropbtn"
-            ><a href="#"
-              >Why Dr.Wise <i class="fas fa-chevron-down down-red-i"></i
-              ><i class="fas fa-chevron-up up-red-i"></i
-            ></a>
-            <div class="why-drwise-dropdown">
-              <a href="./index.html#benefits">Benefits</a>
-              <a href="./index.html#how_it_works">How it works</a>
-              <a href="./index.html#services">Services</a>
-              <a href="./for_professional.html">For Professionals</a>
-            </div>
-          </span>
-          <span><a href="./FAQ.html">FAQ</a></span>
-          <span><a href="./Professionals.html">Health Professionals</a></span>
-          <span class="lang-dropbtn">
-            <button class="lang-btn">
-              EN <i class="fas fa-chevron-down down-white-i"></i
-              ><i class="fas fa-chevron-up up-white-i"></i>
-            </button>
-            <div class="lang-dropdown">
-              <a href="#">EN</a>
-              <a href="#">RU</a>
-            </div>
-          </span>
-        </div>
-    
-        <div class="nav-links-for-small-devices">
-          <span class="nav-modal-buttons" id="hover-modal-btns">
-            <button class="login-modal-btn" onclick="loginModalFunc()">
-              Login
-            </button>
-            <button class="sign-up-modal-btn" onclick="SignUpModalFunc()">
-              Sign Up <i class="fas fa-chevron-down down-white-i"></i>
-            </button>
-          </span>
-    
-          <div class="modal" id="LoginModal">
-            <div class="login-modal-content">
-              <span class="close-login-modal" onclick="closeLogin()"
-                >&times;</span
-              >
-              <form class="nav-login-form" autocomplete="off">
-                <label for="nav-login">Enter your login:</label>
-                <input type="text" id="nav-login" name="login" />
-                <label for="nav-login-password">Enter your password:</label>
-                <input
-                  type="password"
-                  id="nav-login-password"
-                  name="password"
-                />
-                <button class="login-btn-sign-in">Sign in</button>
-              </form>
-            </div>
-          </div>
-    
-          <div class="modal" id="SignUpModal">
-            <div class="signUp-modal-content">
-              <span class="close-login-modal" onclick="closeSignUp()"
-                >&times;</span
-              >
-              <a href="#">As Patient</a>
-              <a href="#">As Health Professional</a>
-            </div>
-          </div>
-    
-          <a href="#">Why Dr.Wise</a>
-          <div class="nav-inline-links">
-            <a href="./index.html#benefits">Benefits</a>
-            <a href="./index.html#how_it_works">How it works</a>
-            <a href="./index.html#services">Services</a>
-            <a href="Professionals.html">For Professionals</a>
-          </div>
-          <a href="./FAQ.html">FAQ</a>
-          <a href="./for_professional.html">Health Professionals</a>
-          <span>
-            <button class="lang-modal-btn" onclick="langModalFunc()">
-              EN <i class="fas fa-chevron-down down-white-i"></i>
-            </button>
-            <div class="modal" id="langModal">
-              <div class="lang-modal-content">
-                <span class="close-lang-modal" onclick="closeLang()"
-                  >&times;</span
-                >
-                <a href="#">EN</a>
-                <a href="#">RU</a>
-              </div>
-            </div>
-          </span>
-        </div>
-    
-        <div class="nav-buttons" id="hover-btns">
-          <span class="login-dropbtn">
-            <button onmouseover="hoverColor1()">Login</button>
-            <div class="login-dropdown">
-              <form class="nav-login-form" autocomplete="off">
-                <label for="nav-login">Enter your login:</label>
-                <input type="text" id="nav-login" name="login" />
-                <label for="nav-login-password">Enter your password:</label>
-                <input
-                  type="password"
-                  id="nav-login-password"
-                  name="password"
-                />
-                <button class="login-btn-sign-in">Sign in</button>
-              </form>
-            </div>
-          </span>
-          <span class="sign-up-dropbtn">
-            <button onmouseover="hoverColor2()">
-              Sign Up <i class="fas fa-chevron-down down-white-i"></i
-              ><i class="fas fa-chevron-up up-white-i"></i>
-            </button>
-            <div class="sign-up-dropdown">
-              <a href="#">As Patient</a>
-              <a href="#">As Health Professional</a>
-            </div>
-          </span>
-        </div>
-      </nav>
-    <!-- ----------- Header END --------- -->
-    <div class="container bottom-margin">
-        <div class="header-down-container">
-            <!-- ----------- ABOUT DrWise body start ----------- -->
-            <div class="breadcrumbs" data-aos="fade-right">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/terms_of_use.html">Terms of Use</a>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="block_title block_title_margin contact_us_title">
-                <h1 data-aos="fade-down" data-aos-duration="1000">
-                    Terms <span class="blue">of Use</span>
-                </h1>
-
-            </div>
-        </div>
+  <!-- ----------- Header START --------- -->
+  <nav class="navbar-outer-container">
+    <div class="hamburger-btn" onclick="toggleFunction(event)">
+      <i class="fas fa-bars openBurger"></i><i class="fas fa-times closeBurger"></i>
+    </div>
+    <div class="nav-logo">
+      <a href="index.html"><img src="./src/img/logo.svg" alt="logo" style="width: 80%" /></a>
     </div>
 
-    <div class="grey-container">
-        <div class="privacy-content privacy" data-aos="fade-in" data-aos-duration="1500">
-            <div class="update_date">Effective Date: August 7th, 2020
-
-                <div class="main-list">
-                    <ul>
-                        <li>
-                            American Well Corporation (“American Well,” “we,” “us,” or “our”) recognizes the importance
-                            of
-                            protecting the privacy of your personal information, and we have prepared this Privacy
-                            Policy to
-                            provide you with important information about the privacy practices applicable to the
-                            American
-                            Well
-                            Platform and any website or service that links to or refers to this Privacy Policy
-                            (collectively,
-                            the “Services”). In addition, individually identifiable information that you provide to us
-                            for
-                            purposes of obtaining medical care from Online Care Network II P.C. (“OCN”) (such
-                            information is
-                            also referred to as “Protected Health Information” or “PHI”) will also be subject to OCN’s
-                            Health
-                            Insurance Portability and Accountability Act Notice of Privacy Practices (the “HIPAA
-                            Notice”),
-                            which
-                            is available here. The HIPAA Notice describes how OCN and we can use and share your PHI and
-                            also
-                            describes your rights with respect to your PHI. To the extent that there is a conflict
-                            between
-                            this
-                            Privacy Policy and the HIPAA Notice with respect to PHI, the HIPAA Notice will prevai
-
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div class="nav-links-for-large-devices">
+      <span class="why-drwise-dropbtn"><a href="#">Why Dr.Wise <i class="fas fa-chevron-down down-red-i"></i><i
+            class="fas fa-chevron-up up-red-i"></i></a>
+        <div class="why-drwise-dropdown">
+          <a href="./index.html#benefits">Benefits</a>
+          <a href="./index.html#how_it_works">How it works</a>
+          <a href="./index.html#services">Services</a>
+          <a href="./for_professional.html">For Professionals</a>
         </div>
+      </span>
+      <span><a href="./FAQ.html">FAQ</a></span>
+      <span><a href="./Professionals.html">Health Professionals</a></span>
+      <span class="lang-dropbtn">
+        <button class="lang-btn">
+          EN <i class="fas fa-chevron-down down-white-i"></i><i class="fas fa-chevron-up up-white-i"></i>
+        </button>
+        <div class="lang-dropdown">
+          <a href="#">EN</a>
+          <a href="#">RU</a>
+        </div>
+      </span>
     </div>
-    <div class="container privacy-content" data-aos="zoom-in" data-aos-duration="1500">
+
+    <div class="nav-links-for-small-devices">
+      <span class="nav-modal-buttons" id="hover-modal-btns">
+        <button class="login-modal-btn" onclick="loginModalFunc()">
+          Login
+        </button>
+        <button class="sign-up-modal-btn" onclick="SignUpModalFunc()">
+          Sign Up <i class="fas fa-chevron-down down-white-i"></i>
+        </button>
+      </span>
+
+      <div class="modal" id="LoginModal">
+        <div class="login-modal-content">
+          <span class="close-login-modal" onclick="closeLogin()">&times;</span>
+          <form class="nav-login-form" autocomplete="off">
+            <label for="nav-login">Enter your login:</label>
+            <input type="text" id="nav-login" name="login" />
+            <label for="nav-login-password">Enter your password:</label>
+            <input type="password" id="nav-login-password" name="password" />
+            <button class="login-btn-sign-in">Sign in</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal" id="SignUpModal">
+        <div class="signUp-modal-content">
+          <span class="close-login-modal" onclick="closeSignUp()">&times;</span>
+          <a href="#">As Patient</a>
+          <a href="#">As Health Professional</a>
+        </div>
+      </div>
+
+      <a href="#">Why Dr.Wise</a>
+      <div class="nav-inline-links">
+        <a href="./index.html#benefits">Benefits</a>
+        <a href="./index.html#how_it_works">How it works</a>
+        <a href="./index.html#services">Services</a>
+        <a href="./for_professional.html">For Professionals</a>
+      </div>
+      <a href="./FAQ.html">FAQ</a>
+      <a href="./Professionals.html">Health Professionals</a>
+      <span>
+        <button class="lang-modal-btn" onclick="langModalFunc()">
+          EN <i class="fas fa-chevron-down down-white-i"></i>
+        </button>
+        <div class="modal" id="langModal">
+          <div class="lang-modal-content">
+            <span class="close-lang-modal" onclick="closeLang()">&times;</span>
+            <a href="#">EN</a>
+            <a href="#">RU</a>
+          </div>
+        </div>
+      </span>
+    </div>
+
+    <div class="nav-buttons" id="hover-btns">
+      <span class="login-dropbtn">
+        <button onmouseover="hoverColor1()">Login</button>
+        <div class="login-dropdown">
+          <form class="nav-login-form" autocomplete="off">
+            <label for="nav-login">Enter your login:</label>
+            <input type="text" id="nav-login" name="login" />
+            <label for="nav-login-password">Enter your password:</label>
+            <input type="password" id="nav-login-password" name="password" />
+            <button class="login-btn-sign-in">Sign in</button>
+          </form>
+        </div>
+      </span>
+      <span class="sign-up-dropbtn">
+        <button onmouseover="hoverColor2()">
+          Sign Up <i class="fas fa-chevron-down down-white-i"></i><i class="fas fa-chevron-up up-white-i"></i>
+        </button>
+        <div class="sign-up-dropdown">
+          <a href="#">As Patient</a>
+          <a href="#">As Health Professional</a>
+        </div>
+      </span>
+    </div>
+  </nav>
+  <!-- ----------- Header END --------- -->
+  <div class="container bottom-margin">
+    <div class="header-down-container">
+      <!-- ----------- ABOUT DrWise body start ----------- -->
+      <div class="breadcrumbs" data-aos="fade-right">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="/terms_of_use.html">Terms of Use</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="block_title block_title_margin contact_us_title">
+        <h1 data-aos="fade-down" data-aos-duration="1000">
+          Terms <span class="blue">of Use</span>
+        </h1>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="grey-container">
+    <div class="privacy-content privacy" data-aos="fade-in" data-aos-duration="1500">
+      <div class="update_date">Effective Date: August 7th, 2020
+
         <div class="main-list">
-            <ul>I. COLLECTION OF INFORMATION
-                <div class="info">We may collect the following kinds of information when you use the Services:
-                </div>
-                <li>
+          <ul>
+            <li>
+              American Well Corporation (“American Well,” “we,” “us,” or “our”) recognizes the importance
+              of
+              protecting the privacy of your personal information, and we have prepared this Privacy
+              Policy to
+              provide you with important information about the privacy practices applicable to the
+              American
+              Well
+              Platform and any website or service that links to or refers to this Privacy Policy
+              (collectively,
+              the “Services”). In addition, individually identifiable information that you provide to us
+              for
+              purposes of obtaining medical care from Online Care Network II P.C. (“OCN”) (such
+              information is
+              also referred to as “Protected Health Information” or “PHI”) will also be subject to OCN’s
+              Health
+              Insurance Portability and Accountability Act Notice of Privacy Practices (the “HIPAA
+              Notice”),
+              which
+              is available here. The HIPAA Notice describes how OCN and we can use and share your PHI and
+              also
+              describes your rights with respect to your PHI. To the extent that there is a conflict
+              between
+              this
+              Privacy Policy and the HIPAA Notice with respect to PHI, the HIPAA Notice will prevai
 
-                    Information you provide directly to us. For certain activities, such as when you register, use our
-                    telemedicine services, subscribe to our alerts, or contact us directly, we may collect some or all
-                    of the following types of information:
-                </li>
-                <li>Contact information, such as your full name, email address, mobile phone number, and address;
-                    Username and password;</li>
-                <li> Payment information, such as your credit card number, expiration date, and credit card security
-                    code;
-                </li>
-                <li> For health care providers, information about your employment, such as your job title, practice
-                    area, primary
-                    specialty, and medical license status, gender, date of birth, languages spoken, educational
-                    background, address,
-                    photograph, social security number, Tax ID, NPI number, professional license information and bank
-                    account
-                    information;</li>
-                <li> Personal health information, including information about your diagnosis, previous treatments,
-                    general health, health
-                    insurance and information which you have stored in Apple HealthKit (to the extent you choose to
-                    synch that data with
-                    our services); and</li>
-                <li> Any other information you provide to us.
-                </li>
-                <li> We may combine such information with information we already have about you.
-                </li>
-                <li> Information we collect automatically. We may collect certain information automatically when you use
-                    our Services,
-                    such as your Internet protocol (IP) address, device and advertising identifiers, browser type,
-                    operating system,
-                    Internet service provider, pages that you visit before and after using the Services, the date and
-                    time of your
-                    visit, information about the links you click and pages you view within the Services, and other
-                    standard server log
-                    information. We may also collect certain location information when you use our Services, such as
-                    your computer’s IP
-                    address, your mobile device’s GPS signal, or information about nearby WiFi access points and cell
-                    towers.
-                </li>
-                <li>We may use cookies, pixel tags, Local Shared Objects, and similar technologies to automatically
-                    collect this
-                    information. Cookies are small bits of information that are stored by your computer’s web browser.
-                    Pixel tags are
-                    very small images or small pieces of data embedded in images, also known as “web beacons” or “clear
-                    GIFs,” that can
-                    recognize cookies, the time and date a page is viewed, a description of the page where the pixel tag
-                    is placed, and
-                    similar information from your computer or device. Local Shared Objects (sometimes referred to as
-                    “Flash Cookies”)
-                    are similar to standard cookies except that they can be larger and are downloaded to a computer or
-                    mobile device by
-                    the Adobe Flash media player. By using the Services, you consent to our use of cookies and similar
-                    technologies.
-                </li>
-                <li> We may also collect technical data to address and fix technical problems and improve our Services,
-                    including the
-                    memory state of your device when a system or app crash occurs while using our Services. Your device
-                    or browser
-                    settings may permit you to control the collection of this technical data. This data may include
-                    parts of a document
-                    you were using when a problem occurred, or the contents of your communications. By using the
-                    Services, you are
-                    consenting to the collection of this technical data.
-                </li>
-                <li>
-                    Information we obtain from your health care providers and other sources. In connection with your
-                    treatment, we may
-                    collect medical records from your past, current, and future health care providers. This may include
-                    information
-                    about your diagnosis, previous treatments, general health, laboratory and pathology test results and
-                    reports, social
-                    histories, any family history of illness, and records about phone calls and emails related to your
-                    illness.
-                </li>
-                <li> We may also receive information about you from other sources, including through third-party
-                    services and
-                    organizations. We may combine our first-party data, such as your email address or name, with
-                    third-party data from
-                    other sources and use this to contact you (e.g. through direct mail). For example, if you access
-                    third-party
-                    services, such as Facebook, Google, or Twitter, through the Services to login to the Services or to
-                    share
-                    information about your experience on the Services with others, we may collect information from these
-                    third-party
-                    services.
-
-                </li>
-            </ul>
+            </li>
+          </ul>
         </div>
-
+      </div>
     </div>
-    <div class="grey-container">
-        <div class="privacy-content privacy" data-aos="fade-in" data-aos-duration="1500">
-            <div class="main-list">
-                <ul>II. USE OF INFORMATION
-                    <div class="info">We generally use the information we collect online to:
-                    </div>
-                    <li>
-                        Provide and improve the Services;
-                        Contact you;
-                    </li>
-                    <li>
-                        Fulfill your requests for products, services, and information;
-                    </li>
-                    <li>
-                        Send you information about additional clinical services or general wellness from us or on behalf
-                        of our affiliates and trusted third-party partners;
-                    </li>
-                    <li>
-                        Analyze the use of the Services and user data to understand and improve the Services;
-                    </li>
-                    <li>Customize the content you see when you use the Services;
-                    </li>
-                    <li>Conduct research using your information, which may be subject to your separate written
-                        authorization;
-                    </li>
-                    <li>Prevent potentially prohibited or illegal activities and otherwise in accordance with our Terms
-                        of Use (which can be found at https://amwell.com/landing.htm); and
-                    </li>
-                    <li>For any other purposes disclosed to you at the time we collect your information or pursuant to
-                        your consent.
-                    </li>
-                </ul>
+  </div>
+  <div class="container privacy-content" data-aos="zoom-in" data-aos-duration="1500">
+    <div class="main-list">
+      <ul>I. COLLECTION OF INFORMATION
+        <div class="info">We may collect the following kinds of information when you use the Services:
+        </div>
+        <li>
+
+          Information you provide directly to us. For certain activities, such as when you register, use our
+          telemedicine services, subscribe to our alerts, or contact us directly, we may collect some or all
+          of the following types of information:
+        </li>
+        <li>Contact information, such as your full name, email address, mobile phone number, and address;
+          Username and password;</li>
+        <li> Payment information, such as your credit card number, expiration date, and credit card security
+          code;
+        </li>
+        <li> For health care providers, information about your employment, such as your job title, practice
+          area, primary
+          specialty, and medical license status, gender, date of birth, languages spoken, educational
+          background, address,
+          photograph, social security number, Tax ID, NPI number, professional license information and bank
+          account
+          information;</li>
+        <li> Personal health information, including information about your diagnosis, previous treatments,
+          general health, health
+          insurance and information which you have stored in Apple HealthKit (to the extent you choose to
+          synch that data with
+          our services); and</li>
+        <li> Any other information you provide to us.
+        </li>
+        <li> We may combine such information with information we already have about you.
+        </li>
+        <li> Information we collect automatically. We may collect certain information automatically when you use
+          our Services,
+          such as your Internet protocol (IP) address, device and advertising identifiers, browser type,
+          operating system,
+          Internet service provider, pages that you visit before and after using the Services, the date and
+          time of your
+          visit, information about the links you click and pages you view within the Services, and other
+          standard server log
+          information. We may also collect certain location information when you use our Services, such as
+          your computer’s IP
+          address, your mobile device’s GPS signal, or information about nearby WiFi access points and cell
+          towers.
+        </li>
+        <li>We may use cookies, pixel tags, Local Shared Objects, and similar technologies to automatically
+          collect this
+          information. Cookies are small bits of information that are stored by your computer’s web browser.
+          Pixel tags are
+          very small images or small pieces of data embedded in images, also known as “web beacons” or “clear
+          GIFs,” that can
+          recognize cookies, the time and date a page is viewed, a description of the page where the pixel tag
+          is placed, and
+          similar information from your computer or device. Local Shared Objects (sometimes referred to as
+          “Flash Cookies”)
+          are similar to standard cookies except that they can be larger and are downloaded to a computer or
+          mobile device by
+          the Adobe Flash media player. By using the Services, you consent to our use of cookies and similar
+          technologies.
+        </li>
+        <li> We may also collect technical data to address and fix technical problems and improve our Services,
+          including the
+          memory state of your device when a system or app crash occurs while using our Services. Your device
+          or browser
+          settings may permit you to control the collection of this technical data. This data may include
+          parts of a document
+          you were using when a problem occurred, or the contents of your communications. By using the
+          Services, you are
+          consenting to the collection of this technical data.
+        </li>
+        <li>
+          Information we obtain from your health care providers and other sources. In connection with your
+          treatment, we may
+          collect medical records from your past, current, and future health care providers. This may include
+          information
+          about your diagnosis, previous treatments, general health, laboratory and pathology test results and
+          reports, social
+          histories, any family history of illness, and records about phone calls and emails related to your
+          illness.
+        </li>
+        <li> We may also receive information about you from other sources, including through third-party
+          services and
+          organizations. We may combine our first-party data, such as your email address or name, with
+          third-party data from
+          other sources and use this to contact you (e.g. through direct mail). For example, if you access
+          third-party
+          services, such as Facebook, Google, or Twitter, through the Services to login to the Services or to
+          share
+          information about your experience on the Services with others, we may collect information from these
+          third-party
+          services.
+
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="grey-container">
+    <div class="privacy-content privacy" data-aos="fade-in" data-aos-duration="1500">
+      <div class="main-list">
+        <ul>II. USE OF INFORMATION
+          <div class="info">We generally use the information we collect online to:
+          </div>
+          <li>
+            Provide and improve the Services;
+            Contact you;
+          </li>
+          <li>
+            Fulfill your requests for products, services, and information;
+          </li>
+          <li>
+            Send you information about additional clinical services or general wellness from us or on behalf
+            of our affiliates and trusted third-party partners;
+          </li>
+          <li>
+            Analyze the use of the Services and user data to understand and improve the Services;
+          </li>
+          <li>Customize the content you see when you use the Services;
+          </li>
+          <li>Conduct research using your information, which may be subject to your separate written
+            authorization;
+          </li>
+          <li>Prevent potentially prohibited or illegal activities and otherwise in accordance with our Terms
+            of Use (which can be found at https://amwell.com/landing.htm); and
+          </li>
+          <li>For any other purposes disclosed to you at the time we collect your information or pursuant to
+            your consent.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container privacy-content" data-aos="zoom-in" data-aos-duration="1500">
+    <div class="main-list">
+      <ul>III. SHARING OF INFORMATION
+
+        <li>
+          We are committed to maintaining your trust, and we want you to understand when and with whom we may
+          share the information we collect.
+        </li>
+        <li>C Healthcare providers, insurance companies, and other healthcare-related entities. We may share
+          your information with
+          other health care providers, laboratories, government agencies, insurance companies, organ
+          procurement
+          organizations, medical examiners or funeral directors, and other entities relevant to providing you
+          with treatment
+          options and support.
+        </li>
+        <li>Authorized third-party vendors and service providers. We may share your information with third-party
+          vendors and
+          service providers that help us with specialized services, including billing, payment processing,
+          customer service,
+          email deployment, business analytics, marketing (including but not limited to advertising,
+          attribution,
+          deep-linking, direct-mail, mobile marketing, optimization and retargeting), performance monitoring,
+          hosting, and
+          data processing. These third-party vendors and service providers may not use your information for
+          purposes other
+          than those related to the services they are providing to us.
+        </li>
+        <li>
+          HealthKit. If you ask us to, we will share your synched HealthKit information with your medical
+          provider. We do not
+          use or disclose HealthKit information for any marketing or advertising purposes or sell this
+          information to any
+          third-party.
+        </li>
+        <li> Corporate affiliates. We may share your information with our corporate affiliates that are subject
+          to this policy.
+        </li>
+        <li> Research partners. We may share your information with our research partners to conduct
+          health-related research; such
+          sharing may be subject to your separate written authorization.
+        </li>
+        <li> Business transfers. We may share your information in connection with a substantial corporate
+          transaction, such as
+          the sale of a website, a merger, consolidation, asset sale, or in the unlikely event of bankruptcy.
+        </li>
+        <li> Legal purposes. We may disclose information to respond to subpoenas, court orders, legal process,
+          law enforcement
+          requests, legal claims or government inquiries, and to protect and defend the rights, interests,
+          health, safety, and
+          security of American Well, our affiliates, users, or the public. If we are legally compelled to
+          disclose information
+          about you to a third party, we will attempt to notify you by sending an email to the email address
+          in our records
+          unless doing so would violate the law or unless you have not provided your email address to us.
+        </li>
+        <li> With your consent or at your direction. We may share information for any other purposes disclosed
+          to you at the time
+          we collect the information or pursuant to your consent or direction.
+        </li>
+        <li> If you access third-party services, such as Facebook, Google, or Twitter, through the Services to
+          login to the
+          Services or to share information about your experience on the Services with others, these
+          third-party services may
+          be able to collect information about you, including information about your activity on the Site, and
+          they may notify
+          your connections on the third-party services about your use of the Site, in accordance with their
+          own privacy
+          policies.
+        </li>
+        <li> If you choose to engage in public activities on the Site or third party sites that we link to, you
+          should be aware
+          that any information you share there can be read, collected, or used by other users of these areas.
+          You should use
+          caution in disclosing personal information while participating in these areas. We are not
+          responsible for the
+          information you choose to submit in these public areas
+
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="grey-container">
+    <div class="privacy-content privacy" data-aos="fade-in" data-aos-duration="1500">
+      <div class="main-list">
+        <ul>IV. SECURITY
+
+          <li>
+            We use reasonable measures to help protect information from loss, theft, misuse and unauthorized
+            access, disclosure, alteration and destruction. You should understand that no data storage
+            system or transmission of data over the Internet or any other public network can be guaranteed
+            to be 100 percent secure. Please note that information collected by third parties may not have
+            the same security protections as information you submit to us, and we are not responsible for
+            protecting the security of such information.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="last"></div>
+  <!-- footer -->
+  <footer>
+    <div class="common-container">
+      <div class="footer-container">
+        <div>
+          <div class="footer-logo">
+            <img src="./src/img/logo.svg" alt="" />
+            <p class="footer-logo-title">The new way of health care</p>
+            <div class="footer-social-icons">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
             </div>
+          </div>
         </div>
+        <div class="footer-lists">
+          <ul>
+            <li>Menu</li>
+            <li><a href="#benefits"> Why Dr.Wise?</a></li>
+            <li><a href="./FAQ.html"> FAQ</a></li>
+            <li><a href="./Professionals.html"> Our Health Professionals</a></li>
+          </ul>
+          <ul>
+            <li>About us</li>
+
+            <li><a href="./About_DrWise.html">About Dr.Wise</a></li>
+
+            <li> <a href="./About_Dekob.html">About Dekob</a> </li>
+            <li> <a href="./Contact_us.html"> Contact Us</a></li>
+            <li><a href="./privacy_policy.html"> Our Privacy Policy</a></li>
+            <li><a href="./terms_of_use.html">Terms of Use</a> </li>
+          </ul>
+          <ul class="mob-list">
+            <li>Health Professionals</li>
+            <li><a href="#"> To became a consultant </a></li>
+            <li>
+              <a class="make-text-red" href="for_professional.html">For Health Professionals</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-buttons">
+          <a href="#"><img src="./src/footer/google.svg" style="width: 58%" alt="" /></a>
+          <a href="#"><img src="./src/footer/app.svg" style="width: 58%" alt="" /></a>
+        </div>
+      </div>
     </div>
-    <div class="container privacy-content" data-aos="zoom-in" data-aos-duration="1500">
-        <div class="main-list">
-            <ul>III. SHARING OF INFORMATION
+  </footer>
 
-                <li>
-                    We are committed to maintaining your trust, and we want you to understand when and with whom we may
-                    share the information we collect.
-                </li>
-                <li>C Healthcare providers, insurance companies, and other healthcare-related entities. We may share
-                    your information with
-                    other health care providers, laboratories, government agencies, insurance companies, organ
-                    procurement
-                    organizations, medical examiners or funeral directors, and other entities relevant to providing you
-                    with treatment
-                    options and support.
-                </li>
-                <li>Authorized third-party vendors and service providers. We may share your information with third-party
-                    vendors and
-                    service providers that help us with specialized services, including billing, payment processing,
-                    customer service,
-                    email deployment, business analytics, marketing (including but not limited to advertising,
-                    attribution,
-                    deep-linking, direct-mail, mobile marketing, optimization and retargeting), performance monitoring,
-                    hosting, and
-                    data processing. These third-party vendors and service providers may not use your information for
-                    purposes other
-                    than those related to the services they are providing to us.
-                </li>
-                <li>
-                    HealthKit. If you ask us to, we will share your synched HealthKit information with your medical
-                    provider. We do not
-                    use or disclose HealthKit information for any marketing or advertising purposes or sell this
-                    information to any
-                    third-party.
-                </li>
-                <li> Corporate affiliates. We may share your information with our corporate affiliates that are subject
-                    to this policy.
-                </li>
-                <li> Research partners. We may share your information with our research partners to conduct
-                    health-related research; such
-                    sharing may be subject to your separate written authorization.
-                </li>
-                <li> Business transfers. We may share your information in connection with a substantial corporate
-                    transaction, such as
-                    the sale of a website, a merger, consolidation, asset sale, or in the unlikely event of bankruptcy.
-                </li>
-                <li> Legal purposes. We may disclose information to respond to subpoenas, court orders, legal process,
-                    law enforcement
-                    requests, legal claims or government inquiries, and to protect and defend the rights, interests,
-                    health, safety, and
-                    security of American Well, our affiliates, users, or the public. If we are legally compelled to
-                    disclose information
-                    about you to a third party, we will attempt to notify you by sending an email to the email address
-                    in our records
-                    unless doing so would violate the law or unless you have not provided your email address to us.
-                </li>
-                <li> With your consent or at your direction. We may share information for any other purposes disclosed
-                    to you at the time
-                    we collect the information or pursuant to your consent or direction.
-                </li>
-                <li> If you access third-party services, such as Facebook, Google, or Twitter, through the Services to
-                    login to the
-                    Services or to share information about your experience on the Services with others, these
-                    third-party services may
-                    be able to collect information about you, including information about your activity on the Site, and
-                    they may notify
-                    your connections on the third-party services about your use of the Site, in accordance with their
-                    own privacy
-                    policies.
-                </li>
-                <li> If you choose to engage in public activities on the Site or third party sites that we link to, you
-                    should be aware
-                    that any information you share there can be read, collected, or used by other users of these areas.
-                    You should use
-                    caution in disclosing personal information while participating in these areas. We are not
-                    responsible for the
-                    information you choose to submit in these public areas
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-                </li>
-            </ul>
-        </div>
-
-    </div>
-    <div class="grey-container">
-        <div class="privacy-content privacy" data-aos="fade-in" data-aos-duration="1500">
-            <div class="main-list">
-                <ul>IV. SECURITY
-
-                    <li>
-                        We use reasonable measures to help protect information from loss, theft, misuse and unauthorized
-                        access, disclosure, alteration and destruction. You should understand that no data storage
-                        system or transmission of data over the Internet or any other public network can be guaranteed
-                        to be 100 percent secure. Please note that information collected by third parties may not have
-                        the same security protections as information you submit to us, and we are not responsible for
-                        protecting the security of such information.
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="last"></div>
-    <!-- footer -->
-    <footer>
-        <div class="common-container">
-            <div class="footer-container">
-                <div>
-                    <div class="footer-logo">
-                        <img src="./src/img/logo.svg" alt="" />
-                        <p class="footer-logo-title">The new way of health care</p>
-                        <div class="footer-social-icons">
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-lists">
-                    <ul>
-                        <li>Menu</li>
-                        <li><a href="#benefits"> Why Dr.Wise?</a></li>
-                        <li><a href="./FAQ.html"> FAQ</a></li>
-                        <li><a href="./Professionals.html"> Our Health Professionals</a></li>
-                    </ul>
-                    <ul>
-                        <li>About us</li>
-
-                        <li><a href="./About_DrWise.html">About Dr.Wise</a></li>
-
-                        <li> <a href="./About_Dekob.html">About Dekob</a> </li>
-                        <li> <a href="./Contact_us.html"> Contact Us</a></li>
-                        <li><a href="./privacy_policy.html"> Our Privacy Policy</a></li>
-                        <li><a href="./terms_of_use.html">Terms of Use</a> </li>
-                    </ul>
-                    <ul class="mob-list">
-                        <li>Health Professionals</li>
-                        <li><a href="#"> To became a consultant </a></li>
-                        <li>
-                            <a class="make-text-red" href="for_professional.html">For Health Professionals</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-buttons">
-                    <a href="#"><img src="./src/footer/google.svg" style="width: 58%" alt="" /></a>
-                    <a href="#"><img src="./src/footer/app.svg" style="width: 58%" alt="" /></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/navbar.js"></script>
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/navbar.js"></script>
 </body>
 
 </html>
