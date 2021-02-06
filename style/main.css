@@ -1087,6 +1087,7 @@ h2 {
 
   .services-container>div>p {
     font-size: 18px;
+    line-height: 30px;
     text-align: left;
   }
 
@@ -1788,6 +1789,10 @@ h2 {
 
   .mobile-benefits {
     margin-top: -70px;
+  }
+
+  .services-container>div>p {
+    max-width: 110px;
   }
 
 }
