@@ -148,7 +148,7 @@
 .gray {
   position: absolute;
   border-radius: 500px 0px 0px 500px;
-  margin-right: -2.5%;
+  /* margin-right: -2.5%; */
 }
 
 .adv-row .gray .poster_block_content {
@@ -171,6 +171,8 @@
   background: #00ADE1;
   border-radius: 500px;
   padding: 31px 0;
+  margin-top: -50px;
+  margin-bottom: 120px;
 }
 
 .poster_block_content {
@@ -184,6 +186,10 @@
 
 .show-btn {
   display: none
+}
+
+.blue-oval .download_button {
+  justify-content: center;
 }
 
 .advantages .download_button:not(:last-child) {
@@ -206,12 +212,10 @@
     max-height: 350px;
   }
 
-  .advantages .poster_block .poster_block_content {
-    width: 85%;
-  }
 
-  .advantages .phone_mockup-screen img {
-    max-height: 250px;
+
+  .adv-row {
+    height: 520px;
   }
 
   .advantages .download_button {
@@ -227,8 +231,27 @@
     margin: 0 auto;
     margin-bottom: 20px;
   }
+
+  .blue-oval {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
 }
 
+@media screen and (max-width:1200px) {
+  .advantages .phone_mockup-screen img {
+    max-height: 280px;
+  }
+
+  .advantages .phone_mockup-screen img {
+    max-height: 350px;
+  }
+
+  .advantages .poster_block .poster_block_content {
+    width: 85%;
+  }
+
+}
 
 @media screen and (max-width:1025px) {
   .advantages {
@@ -240,6 +263,10 @@
     font-size: 40px;
     line-height: 42px;
     margin-bottom: 10px;
+  }
+
+  .gray {
+    border-radius: 50px 0 0 50px;
   }
 
 
@@ -288,7 +315,7 @@
 
   .adv-row {
     max-width: -webkit-fill-available;
-    max-height: 420px;
+    max-height: 410px;
     flex-direction: column-reverse;
     padding-bottom: 30px;
   }

@@ -232,7 +232,7 @@ input {
 }
 
 h3 {
-  margin: 6% 0;
+  margin: 8% 0;
 }
 
 .block_title h1,
@@ -261,7 +261,7 @@ h2 {
 
 /* ---------------Banner--------- */
 .banner {
-  height: 100vh;
+  height: 105vh;
   background-image: url(../src/img/Group\ 2825.png);
   background-position: right;
   background-repeat: no-repeat;
@@ -508,7 +508,7 @@ h2 {
 }
 
 .slideshou-item>h2 {
-  margin-top: 10%;
+  /* margin-top: 10%; */
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -967,6 +967,7 @@ h2 {
   font-style: normal;
   font-weight: 500;
   font-size: 65px;
+  margin-top: -5%;
   line-height: 82px;
   text-align: center;
   color: #3b3b3b;
@@ -1406,7 +1407,7 @@ h2 {
   }
 
   .mobile-benefits {
-    margin-top: -50px;
+    margin-top: -80px;
   }
 
   .slideshou-item>h2 {
@@ -1708,6 +1709,9 @@ h2 {
 }
 
 @media screen and (max-width: 490px) {
+  .banner {
+    height: 80vh;
+  }
 
   /* .prof-info>p {
     margin-top: -8.8%;
@@ -1746,7 +1750,7 @@ h2 {
 
 @media screen and (max-width: 377px) {
   .banner {
-    height: 70vh;
+    height: 75vh;
   }
 
   .banner_txt h1 {
@@ -1788,13 +1792,12 @@ h2 {
   }
 
   .mobile-benefits {
-    margin-top: -70px;
+    margin-top: -60px;
   }
 
   .services-container>div>p {
     max-width: 110px;
   }
-
 }
 
 @media screen and (max-width: 360px) {

@@ -323,10 +323,10 @@ i:hover {
   position: absolute;
   top: 200px;
   left: -65px;
-  height: fit-content;
+  height: auto;
   box-shadow: 0px 10px 20px rgba(180, 180, 180, 0.2);
   border-radius: 5px;
-  width: 173px;
+  width: -webkit-max-content;
   background: #00acde;
   display: flex;
   flex-direction: column;

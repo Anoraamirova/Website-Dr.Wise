@@ -537,6 +537,7 @@
 
     .corona_page .risk-row {
         flex-direction: column;
+        margin-bottom: 100px;
     }
 
     .corona_page .left-risk-poster {

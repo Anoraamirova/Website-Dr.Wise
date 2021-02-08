@@ -393,9 +393,14 @@ h2 {
     margin-top: 40px !important;
   }
 
+  .poster_block {
+    padding: 20px 0;
+  }
+
   .poster_block p,
   .poster_block_right p {
     font-size: 14px;
     line-height: 20px;
+    padding: 0;
   }
 }
