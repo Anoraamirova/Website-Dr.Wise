@@ -981,11 +981,8 @@ body {
 
 .move-slide-left:hover,
 .move-slide-right:hover {
-  background-color: #ffffff;
-  color: #ff6969;
-  border: 2px #ff6969 solid;
-  -webkit-box-shadow: 0px 0px 13px 0px #ff6969;
-  box-shadow: 0px 0px 13px 0px #ff6969;
+  box-shadow: 0px 10px 20px rgba(237, 75, 75, 0.2);
+  background: #E75656;
 }
 
 .swiper-button-prev:after {
