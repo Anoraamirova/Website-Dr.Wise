@@ -674,14 +674,16 @@ i:hover {
   background: transparent;
 }
 
+@media screen and (max-width: 1300px) and (min-width: 1041px) {
+  .navbar-outer-container {
+    grid-template-columns: 20% 58% 20%;
+  }
+}
 @media screen and (max-width: 1125px) and (min-width: 1041px) {
   .nav-links-for-large-devices {
     padding-left: 5%;
   }
 
-  .navbar-outer-container {
-    grid-template-columns: 20% 58% 20%;
-  }
 }
 
 @media screen and (max-width: 1040px) {

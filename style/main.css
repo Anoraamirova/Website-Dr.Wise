@@ -793,7 +793,7 @@ h2 {
 }
 
 .user-opinions-contanier-item>p:nth-child(2) {
-  margin-left: 15%;
+  margin-left: 10%;
   margin-top: 8%;
   font-family: Gotham Pro;
   font-style: normal;
@@ -809,7 +809,7 @@ h2 {
   font-weight: 450;
   font-size: 50px;
   line-height: 55px;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-top: -4%;
   margin-bottom: 0;
   padding: 0;
@@ -823,7 +823,7 @@ h2 {
   font-size: 13px;
   line-height: 25px;
   color: #5E5E5E;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-top: -3%;
   padding-top: 0;
   margin-right: 8%;
@@ -1017,11 +1017,13 @@ h2 {
   }
 
   .user-opinions-container {
-    grid-template-columns: 542px 542px;
+    grid-template-columns: 500px 500px 500px;
     grid-template-rows: 276px 276px 276px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 20%;
   }
+  .user-opinions-contanier-item>p:nth-child(2) {
+    margin-top: 10%;}
 
   .services-container {
     grid-template-columns: 400px 400px 400px 400px;
@@ -1032,9 +1034,12 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1720px) {
+@media screen and (max-width: 1750px) {
 
 
+  .user-opinions-container {
+    grid-template-columns: 542px 542px;
+  justify-content: space-evenly;}
   .services-container {
     grid-template-columns: 24% 24% 24% 24%;
   }
