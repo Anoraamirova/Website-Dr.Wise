@@ -39,7 +39,7 @@ footer ul li a:hover {
 }
 
 footer ul li:nth-child(1) {
-  list-style-type: n;
+  list-style-type: none;
   font-family: Gotham Pro;
   font-style: normal;
   font-weight: normal;
@@ -140,7 +140,7 @@ i:hover {
 .footer-logo-title {
   top: 65px;
   left: 81px;
-  width: fit-content;
+  width: max-content;
   position: absolute;
   font-family: Gotham Pro;
   font-style: normal;

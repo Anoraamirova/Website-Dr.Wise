@@ -505,6 +505,7 @@ h2 {
   position: relative;
   height: 574px;
   width: 586px;
+  margin: 0 auto;
 }
 
 .slideshou-item>h2 {
@@ -884,7 +885,7 @@ h2 {
 .swiper-container {
   margin: 0 auto;
   width: 100% !important;
-  height: 850px;
+  height: 700px;
 }
 
 .left-box-radius {
