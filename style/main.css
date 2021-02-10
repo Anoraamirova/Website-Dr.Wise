@@ -774,7 +774,7 @@ h2 {
   display: grid;
   grid-template-columns: 542px 542px 542px;
   grid-template-rows: 276px 276px;
-  justify-content: space-around;
+  justify-content: space-between;
   row-gap: 13%;
   margin-bottom: 11%;
 }
